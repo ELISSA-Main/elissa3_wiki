@@ -1,31 +1,54 @@
-# (string) Title of your wiki
-title: git-wiki
-demo_ver: 1.0.14
-# remote_theme: Drassil/git-wiki-theme@master
-description: Git-Wiki demo and documentation
+# Title of your wiki (string)
+title: ELISSA Wiki
+# Remote theme used to include more files
+remote_theme: Drassil/git-wiki-theme@master
+# Description of the wiki
+description: This wiki documents the ELISSA project of the Institute for Space Systems at the TU Braunschweig.
+# Able to download wiki pages
 show_downloads: true
+# Show the wiki pages
 show_wiki_pages: true
+# Show the newly edited wiki pages
 show_wiki_pages_limit: 10
+# From jekyll (read jekyll doc)
 paginate: 5
 paginate_path: "assets/blog/page:num"
-blog_feature: true
+permalink: pretty
+# Enable/disable wiki posts list in sidebar (needs blog_feature enabled)
+blog_feature: false
+# Enable/disable wiki posts list in sidebar (needs blog_feature enabled)
 show_wiki_posts: true
 show_wiki_posts_limit: 5
+# (string) Specify github metadata allowing wiki tool buttons to work
+git_hostname: "github.com"
 logo_url: assets/images/elissa_logo.png
 google_analytics:
-git_branch: gh-pages
+git_branch: master
 use_github_wiki: false
 use_prose_io: true
 service: github
 search_engine : "js"
-# google_cse_token: 007197903287787072094:8rbvkeqo6qw
+google_cse_token:
 wiki_folder : "wiki"
 permalink: /blog/posts/:year/:month/:day/:title:output_ext
 site_root: 
 
 #
-# Jekyll
+# Jekyll configurations
 #
+
+# You can customize it changing default layout for all pages
+# More info: https://jekyllrb.com/docs/configuration/
+#
+# git-wiki includes some internal themes that you can choose
+# check _layouts folder
+#
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: true
 
 defaults:
  - 
@@ -56,14 +79,26 @@ defaults:
     values:
       layout: "git-wiki-blog"
 
+sass:
+    style: compressed
 plugins:
- - jekyll-feed
- - jekyll-redirect-from
- - jekyll-seo-tag
- - jekyll-sitemap
- - jekyll-avatar
- - jemoji
- - jekyll-mentions
+  - jekyll-avatar
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-mentions
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
+  - jemoji
+  - jekyll-gitlab-metadata
   
 #
 # INCLUDING HOOKS
@@ -71,6 +106,29 @@ plugins:
 # Check wiki documentation to learn how they work
 #
 
-inc_after_content: "drassil/comments.html"
-inc_after_head : "drassil/head.html"
-inc_before_page_list : "drassil/sidebar.html"
+inc_before_toc : 
+inc_after_toc : 
+inc_before_content : 
+inc_after_content :
+inc_before_footer : 
+inc_after_footer : 
+inc_before_head : 
+inc_after_head :  drassil/head.html
+inc_before_meta : 
+inc_after_meta : 
+inc_before_scripts : 
+inc_after_scripts : 
+inc_before_styles : 
+inc_after_styles :
+inc_before_header : 
+inc_after_header : 
+inc_before_tail : 
+inc_after_tail : 
+inc_before_tools : 
+inc_after_tools : 
+
+inc_before_page_list : drassil/sidebar.html
+inc_after_page_list :
+inc_before_post_list :
+inc_after_post_list :
+
