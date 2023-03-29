@@ -12,6 +12,7 @@ information to the testbed operators and developers and can serve as an input fo
 * [testbed](testbed/testbed) links to all documents that directly adress the elissa testbed itself.
 * [tutorials](tutorials/tutorials) provides tutorials for using the testbed.
 * [experiments](experiments/experiments) lists setups and reports of experiments conducted onboard the testbed.
+* [Test Link](overview/overview.md) to the page
 
 ## About Elissa
 Some lines about the project (TBD)
