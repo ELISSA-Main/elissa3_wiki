@@ -25,7 +25,7 @@ logo_url: assets/images/elissa_logo.png
 google_analytics:
 git_branch: master
 use_github_wiki: false
-use_prose_io: true
+use_prose_io: false
 service: github
 search_engine : "js"
 google_cse_token:

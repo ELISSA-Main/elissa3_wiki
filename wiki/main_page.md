@@ -19,7 +19,7 @@ Some lines about the project (TBD)
 ![the elissa testbed](graphics/elissa.png)
 
 ## Further reading 📕
-Besides this wiki, there are some documents (slides, theses and report) describing the testbed:
+Besides this wiki, there are some documents (slides, thesis and report) describing the testbed:
 
 * [Design and Qualification of Hardware-in-the-Loop Testbed to Experimentally Evaluate Spacecraft Proximity Operations](documents/thesislasse2020.pdf) is a student thsis that provides details regarding the Hanno Freeflyer and the GNC subsystem. [This set of Slides](documents/talklasse2020.pdf) provides a condensed version of aforementioned thesis
 * [Experimentelle Charakterisierung der Dockingeigenschaften von Gecko-materialien auf einem Luftlagertisch](documents/rftp2020.pdf) describes docking tests undertaken onboard the testbed.
