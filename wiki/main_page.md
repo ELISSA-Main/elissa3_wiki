@@ -15,7 +15,7 @@ information to the testbed operators and developers and can serve as an input fo
 
 ## About Elissa
 Some lines about the project (TBD)
-![the elissa testbed](elissa.png)
+![the elissa testbed](graphics/elissa.png)
 
 ## Further reading 📕
 Besides this wiki, there are some documents (slides, theses and report) describing the testbed:
