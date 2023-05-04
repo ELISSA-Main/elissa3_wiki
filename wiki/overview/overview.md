@@ -18,7 +18,16 @@ These systems are essential for operations on the air bearing table. In addition
 
 ## Lab Environment
 
-tbd
+The laboratory environment of the ELISSA system consists of the described four subsystems:
+
+* Aeromechanical subsystem
+* Motion tracking subsystem
+* Freeflyer subsystem
+* Mission control subsystem
+
+The laboratory room with the air bearing table is shown in the image below. The table has a length (x-direction) of 7 m and a width (y-direction) of 4 m. As can be seen, the table is made out of different panels. These panels have either a dimension of 2,33 m x 0,8 m or 1,75 m x 0,8 m, depending on the row. The table is split in two half at x = 3,5 m. Each half is supplied by a different air blower, so the operator can decide to use only one or both table parts.  
+
+![The lab environment](graphics/elissa_tisch.jpg)
 
 ## Freeflyer Classes
 
