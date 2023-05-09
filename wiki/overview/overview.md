@@ -37,28 +37,25 @@ This is happening in the fourth subsystem, the mission control subsystem. The co
 - *INVERTER* to control the blowers
 - *Motive* to use the motion tracking system
 
-An introuction on how to use the software is given in the [Tutorial](run_laboratory.md) section of the wiki. The other computer is runnung *Ubuntu 20.04* to provide the [ROS](ros.md) infrastructure. Most of the necessary code to control the freeflyers and run mission specific code is executed on this machine. 
+An introuction on how to use the software is given in the [Tutorial](run_laboratory) section of the wiki. The other computer is runnung *Ubuntu 20.04* to provide the [ROS](ros) infrastructure. Most of the necessary code to control the freeflyers and run mission specific code is executed on this machine. 
 
 ## Freeflyer Classes
 
-The freeflyers are the satellite mockups operating on the ELISSA table. As real satellites, the freeflyers need different subsystems to function. The general systems are very similar between the different flyers. The all have a:
+The freeflyers are the satellite mockups operating on the ELISSA table. As real satellites, the freeflyers need different subsystems to function. The general systems are very similar between the different flyers. They all have:
 
 - Propulsion module
 - Service module
 
 Furthermore each freeflyer can use mission specific payloads. The concrete details of each module differ depending on the freeflyer class. At the moment two freeflyer classes are used on the ELISSA testbed:
 
-- [*Hannibal*](hannibal) class freeflyers
-- [*Hamilcar*](hamilcar) class freeflyers
+- [*Hannibal*](hannibal) class freeflyers:
+  - Hannibal
+  - Pegasus
+- [*Hamilcar*](hamilcar) class freeflyers:
+  - Hamilcar
+  - Red Five
 
-A complete list of all freeflyers is given in the table below. A detailed description of each freeflyer class is provided in the next section.
-
-| Name | Class | Status | Description |
-| - | - | - | - |
-| Hannibal | Hannibal | Operational | First freeflyer of the hannibal class, mainly used for printing and docking experiments |
-| Pegasus | Hannibal | Operational | Second freeflyer of the hannibal class, mainly used for IMU development |
-| Hamilcar | Hammilcar | Not oprational | Freeflyer of the hamilcar classed, redesigned in 2021 |
-| Red Five | Hammilcar | Not oprational | Freeflyer of the hamilcar classed, redesigned in 2021 |
+Detail information about the freeflyers are provided on the linked pages. Each freeflyer has eight propellers to move it on the testbed. They are controlled by the Motor Control Unit (MCMU), which receives the commands from a corresponding node on the on-board computer of the freeflyer. This computer is connected to the mission control computer via a wireless network. It is integrated in the same ROS network and receives the commands from the Force Allocation Module (FAM). An overview of the ROS relations is given on the [ROS architecture](ros_architecture) page. The different possible payloads are related to the experimet types, which are described in the [following sction](#experiment-types).
 
 ## Simulation Environment
 
