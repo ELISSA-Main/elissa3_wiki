@@ -7,6 +7,8 @@ In this chapter, the different aspects of the system are described. For tutorial
 - [System Overview](#system-overview)
   - [Lab Environment](#lab-environment)
   - [Freeflyer Classes](#freeflyer-classes)
+    - [Hannibal Class](#hannibal-class)
+    - [Hamilcar Class](#hamilcar-class)
   - [Simulation Environment](#simulation-environment)
   - [Experiment Types](#experiment-types)
   - [Package Structure](#package-structure)
@@ -32,11 +34,45 @@ Large panel | 2,33 m | 0,8 m |
 
 In the image above are two freeflyers shown. These are the satellite mockups operating on the table. They are described in detail in the next section. The position of the freeflyers is tracked using the motion tracking system. Multiple cameras are placed in the room overlooking the complete tested. These cameras detect the markers, which are placed on the freeflyers. In the tracking software, the corresponding markers are assigned to a freeflyer to get its position.
 
-This is happening in the fourth subsystem, the mission control subsystem. The control room is visible in the picture above behind the glass window. At least two computers are used to run the software necessary for the laboratory operations. tbd
+This is happening in the fourth subsystem, the mission control subsystem. The control room is visible in the picture above behind the glass window. At least two computers are used to run the software necessary for the laboratory operations. *Windows* is running on the first computer to run the following programs:
+
+- *INVERTER* to control the blowers
+- *Motive* to use the motion tracking system
+
+An introuction on how to use the software is given in the [Tutorial](user_guides/run_laboratory.md) section of the wiki. The other computer is runnung *Ubuntu 20.04* to provide the [ROS](overview/ros.md) infrastructure. Most of the necessary code to control the freeflyers and run mission specific code is executed on this machine. 
 
 ## Freeflyer Classes
 
-tbd
+The freeflyers are the satellite mockups operating on the ELISSA table. As real satellites, the freeflyers need different subsystems to function. The general systems are very similar between the different flyers. The all have a:
+
+- Propulsion module
+- Service module
+
+Furthermore each freeflyer can use mission specific payloads. The concrete details of each module differ depending on the freeflyer class. At the moment two freeflyer classes are used on the ELISSA testbed:
+
+- *Hannibal* class freeflyers
+- *Hamilcar* class freeflyers
+
+A complete list of all freeflyers is given in the table below. A detailed description of each freeflyer class is provided in the next section.
+
+| Name | Class | Status | Description |
+| - | - | - | - |
+| Hannibal | Hannibal | Operational | First freeflyer of the hannibal class, mainly used for printing and docking experiments |
+| Pegasus | Hannibal | Operational | Second freeflyer of the hannibal class, mainly used for IMU development |
+| Hamilcar | Hammilcar | Not oeprational | Freeflyer of the hamilcar classed, redesigned in 2021 |
+| Red Five | Hammilcar | Not oeprational | Freeflyer of the hamilcar classed, redesigned in 2021 |
+
+### Hannibal Class
+
+The Hannibal freeflyer is the second freeflyer used within the ELISSA testbed. It consists of several modules that can easily be stacked upon each other. The figure below shows Hannibal in the printing configuration, consisting of a propulsion module (bottom), the service module (middle) and the printing module (top).  
+
+![The Hannibal freeflyer](graphics/hannibal.jpg)
+
+> A redesign of the Hannibal class freeflyers was conducted to reduce the weight and optimize the freeflyers. This new design is used for Pegasus and it is planned to changed Hannibal as well, when it is not needed. 
+
+
+
+### Hamilcar Class
 
 ## Simulation Environment
 
