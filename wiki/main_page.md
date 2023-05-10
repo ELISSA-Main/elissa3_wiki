@@ -125,7 +125,7 @@ This is a text, and [this text is highlighted as a link](filename_of_the_new_pag
 
 The foldername must not be written before the filename as well as the ending. Furthermore it would be helpful if the new page is mentioned in the sidebar. The file containing the sidebar is located in `_includes/own/sidebar.html`. The structure should be self-explanatory when looking at the already included files. An example is given here:
 
-````html
+```html
 <p><details><summary>Chapter Description</summary><p></p>
 
 <ul>
@@ -139,5 +139,18 @@ The foldername must not be written before the filename as well as the ending. Fu
 
 The file names are referenced again without a folder and the file ending. Furthermore, sections can be referenced by writing the filename, a hashtag and the section title with `-` instead of spaces. Lower layer headings also use only one hashtag.
 
-##
+### Uploading and Including Images
+
+To upload and include an image, you can either drop it in the corresponding `/graphics` folder from the browser or add it to your local repository and then commit and push it. To include the image, two options are available. The default Markdown syntax is the easiest way to include an image:
+
+```markdown
+![The Hannibal freeflyer](graphics/hannibal.jpg)
+```
+
+Using this syntax, the image is always maximized to fit the default page width. This may lead to very large images, especially if they are vertically oriented. To decrease the image size, the html syntax can be used. Here, a value for the width (or height) can be defined. Note that a link from the main directory must be defined:
+
+```html
+<img src="wiki/overview/graphics/hannibal.jpg" width="400">
+```
+
 
