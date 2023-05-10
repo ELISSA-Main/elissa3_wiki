@@ -5,6 +5,8 @@ published: true
 
 # ELISSA Wiki
 
+> **Disclaimer:** This wiki is used to document the ELISSA project, which is activley maintained at the [Institute of Space Systems](https://www.space-systems.eu) at the TU Braunschweig. The repositories containing the source code are private and only visible for the team members. If you are interested in the project, please contact the institute head.
+
 This wiki aims to document the ELISSA project and serves as a knowledge base. It is intended to provide 
 information to the testbed operators and developers and can serve as an input for documents such as technical notes or other publications. It develops its full potential when the pages are activly maintained. If you find an error or want to add missing information, feel free to edit the page or create a pull request.
 
@@ -45,18 +47,97 @@ The wiki is divided into different sections and pages providing all the necessar
 - Documentation for the Astrobee environment
   - [Astrobee Environment](astrobee)
 
-## About Elissa
-Some lines about the project (TBD)
-![the elissa testbed](graphics/elissa.png)
+## Further Reading
 
-## Further reading 📕
-Besides this wiki, there are some documents (slides, thesis and report) describing the testbed:
+Besides this wiki, multiple papers are published concering the testbed and conducted experiments:
 
-* [Design and Qualification of Hardware-in-the-Loop Testbed to Experimentally Evaluate Spacecraft Proximity Operations](documents/thesislasse2020.pdf) is a student thsis that provides details regarding the Hanno Freeflyer and the GNC subsystem. [This set of Slides](documents/talklasse2020.pdf) provides a condensed version of aforementioned thesis
-* [Experimentelle Charakterisierung der Dockingeigenschaften von Gecko-materialien auf einem Luftlagertisch](documents/rftp2020.pdf) describes docking tests undertaken onboard the testbed.
+[*Trentlage, C., et al. "The elissa laboratory: Free-floating satellites for space-related research." Deutscher Luft-und Raumfahrtkongress. 2018.*](https://www.researchgate.net/profile/Mohamed-Ben-Larbi/publication/327982192_The_ELISSA_Laboratory_Free-Floating_Satellites_for_Space-Related_Research/links/5bb1fd55299bf13e60597aed/The-ELISSA-Laboratory-Free-Floating-Satellites-for-Space-Related-Research.pdf)
+
+[*Jonckers, D., et al. "Additive Manufacturing of Large Structures Using Free-Flying Satellites. Front." Space Technol 3 (2022): 879542.*](https://leopard.tu-braunschweig.de/servlets/MCRFileNodeServlet/dbbs_derivate_00049688/Thakur_frspt-03-879542.pdf)
+
+[*Yang, Juntang, et al. "Concept and feasibility evaluation of distributed sensor-based measurement systems using formation flying multicopters." Atmosphere 12.7 (2021): 874.*](https://www.mdpi.com/2073-4433/12/7/874)
+
+[*Trentlage, Christopher, and Enrico Stoll. "A biomimetic docking mechanism for controlling uncooperative satellites on the ELISSA free-floating laboratory." 2018 3rd International Conference on Advanced Robotics and Mechatronics (ICARM). IEEE, 2018.*](https://ieeexplore.ieee.org/abstract/document/8610791)
+
+[*Ben-Larbi, Mohamed Khalil, et al. "Orbital debris removal using micropatterned dry adhesives: Review and recent advances." Progress in Aerospace Sciences 134 (2022): 100850.*](https://www.sciencedirect.com/science/article/abs/pii/S0376042122000422)
+
+For team members, additional material like thesises and other documents are available here:
+
+[*ELISSA 2 wiki document fodler*](https://github.com/ELISSA-IRAS/elissa_wiki/tree/master/documents)
 
 ## Contributing to this Wiki
-When adding a page to the document, think about which category is most suitable. Then create a `.md` file in the respective directory and link it to the directorys master file (the file that has the same name as the directory). It is not neccesarry to use this frontend to contribute to the wiki, you can use almost any other texteditor to write markup and `git` to add/commit your files. ** Please make sure to use standard markdown syntax, as this enables automated conversion to `.pdf`**
 
-## Building Documentation
-run one of the build scripts within the `pandoc` folder.
+The wiki is most helpful when it is up to date and activley maintained. Therefore the contribution to the wiki is a core element. The major possible contributions are described in this section to help the users:
+
+- Editing an existing page
+- Creating a new page
+- Moving a section a own page
+- Link to another page
+- Upload and include an image
+
+The wiki pages are written in *Markdown*. General formatting information can be easily accessed in the internet. A helpfull cheat sheet is for example given [here](https://www.markdownguide.org/cheat-sheet).
+
+### Editing an Existing Page
+
+Two possibilities exist to edit an already created page:
+
+1. Use the *edit* button provided in the top right corner of the page
+2. Edit the Markdown file in a local repository
+
+The first option is the easiest one, as it can be directly accessed when reading the page. When clicking the *edit* button, the online text editor of Github is opend with the correponding Markdown file. The changes can now be made and then simply commited. 
+
+The second option is usefull when multiple changes on different changes should be made. As with any other repository, the wiki can be cloned on your local computer. Next, all necessary Markdown files can be edited and than commited and pushed together. For this, is it helpfull to know the repository file structure:
+
+```
+elissa3_wiki/
+┣ assets/           -> Used for the integration with GithubPages
+┣ styles/           -> Used for the integration with GithubPages
+┣ wiki/             -> Contains all wiki Markdown files
+┃ ┣ dev_guides/     
+┃ ┣ graphics/
+┃ ┣ overview/
+┃ ┣ user_guides/
+┃ ┗ main_page.md
+┣ _includes/        -> Used for the integration with GithubPages
+┣ _layouts/         -> Used for the integration with GithubPages
+┣ _posts/           -> Used for blog posts (currently deactivated)
+┣ _sass/            -> Used for the integration with GithubPages
+┣ .gitignore
+┣ LICENSE
+┣ README.md
+┗ _config.yml       -> Configuration file for the GithubPages wiki theme
+```
+
+The markdown files are placed in the `wiki/` folder and the corresponding subfolders based on the category. Look there for the necessary Markdown source file.
+
+### Creating a New Page
+
+When creating a new page, the same two options are possible as for editing a page:
+
+1. Use the *add new* button in the top right corner
+2. Create a new file in the local repository
+
+When creating a new file in the browser using the *add new* button, the GitHub web editor opens. To keep the repository clean, it is necessary to enter the corresponding folder based on the category before the filename. The folder are described in the section above. Furthmore each filename can only be used once, so make sure a usefull and unique name is choosen. The creation of a new file in the local repository is very similar. A new file is created in the corresponding folder and than the changes are commited and pushed. 
+
+When a new page is created, it is very important that it is **trackable**. So it would be useful to create links on other pages which refer to your new page. Otherwise you just created a file in the void which cannot be found by any interested user. A link may look like this:
+
+```markdown
+This is a text, and [this text is highlited as a link](filename_of_the_new_page). 
+```
+
+The foldername must not be written before the filename as well as the ending. Furthermore it would be helful if the new page is mentioned in the sidebar. The file containing the sidebar is located in `_includes/own/sidebar.html`. The structure should be self-explanatory when looking at the already included files. An example is given here:
+
+````html
+<p><details><summary>Chapter Description</summary><p></p>
+
+<ul>
+  <li><a href="top_layer_file_name">Top Page Description</a></li>
+  <ul>
+    <li><a href="top_layer_file_name#section-titel">Section Description</a></li>
+  </ul>
+  <li><a href="other_file_in_chapter">Page Description</a></li>
+</ul>
+```
+
+The file names are referenced again without a folder and the file ending. Furthermore, sections can be referenced by writing the filename, a hastag and the section titel with `-` instead of spaces. Lower layer heading also use only one hastag.
+
