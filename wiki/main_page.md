@@ -150,7 +150,7 @@ To upload and include an image, you can either drop it in the corresponding `/gr
 Using this syntax, the image is always maximized to fit the default page width. This may lead to very large images, especially if they are vertically oriented. To decrease the image size, the html syntax can be used. Here, a value for the width (or height) can be defined. Note that a link from the main directory must be defined:
 
 ```html
-<img src="wiki/overview/graphics/hannibal.jpg" width="400">
+<img src="wiki/overview/graphics/hannibal.jpg" width="400" class="center">
 ```
 
 
