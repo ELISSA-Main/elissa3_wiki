@@ -5,12 +5,14 @@ The main part of the ELISSA system is the air bearing table. It provides a plana
 In this chapter, the different aspects of the system are described. For tutorials on how to use the system look in the [user guides](user_guides) section. The following chapter describes these elements:
 
 ---
+Table of Content:
 - [System Overview](#system-overview)
   - [Lab Environment](#lab-environment)
   - [Freeflyer Classes](#freeflyer-classes)
   - [Simulation Environment](#simulation-environment)
   - [Experiment Types](#experiment-types)
   - [Package Structure](#package-structure)
+
 ---
 
 ## Lab Environment
