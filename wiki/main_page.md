@@ -71,8 +71,6 @@ The wiki is most helpful when it is up to date and actively maintained. Therefor
 
 - Editing an existing page
 - Creating a new page
-- Moving a section a own page
-- Link to another page
 - Upload and include an image
 
 The wiki pages are written in *Markdown*. General formatting information can be easily accessed in the internet. A helpful cheat sheet is for example given [here](https://www.markdownguide.org/cheat-sheet). Furthermore an introduction to the [basic syntax](https://www.markdownguide.org/basic-syntax/) and [extended syntax](https://www.markdownguide.org/extended-syntax/) are provided as well. 
@@ -140,4 +138,6 @@ The foldername must not be written before the filename as well as the ending. Fu
 ```
 
 The file names are referenced again without a folder and the file ending. Furthermore, sections can be referenced by writing the filename, a hashtag and the section title with `-` instead of spaces. Lower layer headings also use only one hashtag.
+
+##
 
