@@ -90,11 +90,9 @@ The second option is useful when multiple changes on different changes should be
 elissa3_wiki/
 ┣ assets/           -> Used for the integration with GithubPages
 ┣ styles/           -> Used for the integration with GithubPages
-┣ wiki/             -> Contains all wiki Markdown files
-┃ ┣ dev_guides/     
-┃ ┣ graphics/
-┃ ┣ overview/
-┃ ┣ user_guides/
+┣ wiki/             -> Contains all wiki Markdown files    
+┃ ┣ graphics/       -> Contains all images used in the wiki pages   
+┃ ┣ ...
 ┃ ┗ main_page.md
 ┣ _includes/        -> Used for the integration with GithubPages
 ┣ _layouts/         -> Used for the integration with GithubPages
@@ -106,7 +104,7 @@ elissa3_wiki/
 ┗ _config.yml       -> Configuration file for the GithubPages wiki theme
 ```
 
-The markdown files are placed in the `wiki/` folder and the corresponding subfolder based on the category. Look there for the necessary Markdown source file.
+The markdown files are placed in the `wiki/` folder. If necessary, subfolders can be created to clean the directory. Look there for the necessary Markdown source file.
 
 ### Creating a New Page
 
@@ -150,7 +148,7 @@ To upload and include an image, you can either drop it in the corresponding `/gr
 Using this syntax, the image is always maximized to fit the default page width. This may lead to very large images, especially if they are vertically oriented. To decrease the image size, the html syntax can be used. Here, a value for the width (or height) can be defined. Note that a link from the main directory must be defined:
 
 ```html
-<img src="wiki/overview/graphics/hannibal.jpg" width="400" class="center">
+<img src="wiki/graphics/hannibal.jpg" alt="The Hannibal freeflyer" width="400">
 ```
 
 
