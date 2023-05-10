@@ -4,7 +4,7 @@
 
 The Hannibal freeflyer is the second freeflyer used within the ELISSA testbed. It consists of several modules that can easily be stacked upon each other. The figure below shows Hannibal in the printing configuration, consisting of a propulsion module (bottom), the service module (middle) and the printing module (top).  
 
-<img src="wiki/overview/graphics/hannibal.jpg" width="400" class="aligncenter">
+<img src="wiki/overview/graphics/hannibal.jpg" width="400">
 
 <!-- ![The Hannibal freeflyer](graphics/hannibal.jpg) -->
 
@@ -12,13 +12,13 @@ The Hannibal freeflyer is the second freeflyer used within the ELISSA testbed. I
 
 Every module  consists of two frames made of aluminum struts that are connected by four L shaped brackets, which are  referred to as L-brackets. Both frames are connected by eight vertical struts whose length can be chosen freely with regards to the modules purpose. The L-brackets are not only used to connect the struts that make up a module, but also allow stacking multiple modules on top of each other. When stacked upon each other, the lower modules upper L-brackets geometry fits the upper modules lower L-bracket which results in a form fit connection of both modules. In order to increase the mechanical load of the module to module connection, each bracket furthermore contains a magnet. When even more stiFFness is required, both modules can be connected using four M5 bolts.
 
-<img src="wiki/overview/graphics/dBracket.png" width="600" class="center">
+<img src="wiki/overview/graphics/dBracket.png" width="600">
 
 <!-- ![FF](graphics/dBracket.png) -->
 
 While the L-brackets connect multiple modules mechanically, two additional data brackets (from now on called D-brackets) ensure that electrical signals and power can be passed from one module to the other. Signals and power are transmitted via spring loaded contacts mounted to a pcb, which allows to easily exchange modules without having to detach connectors. There are two types of D-brackets, an upper and a lower D-bracket. While both brackets 3D printed structure is the same for the upper an the lower bracket, the pcbs diFFer. The lower data bracket contains aforementioned spring loaded pins while the upper bracket contains the respective counterparts. Both D-brackets PCBs contain 6 power as well as 6 GND contacts that are directly connected to the service modules battery. Furthermore they contain 24 GPIO pins that are arranged in a grid. On the upper D-bracket, these GPIO pins are also exposed to a standard 2.54 mm pin-header. This way signals can be exchanged in between modules in a flexible and protocol-agnostic manner, which keeps the FF modular.
 
-<img src="wiki/overview/graphics/pcb_upper.png" width="600" class="center">
+<img src="wiki/overview/graphics/pcb_upper.png" width="600">
 
 <!-- ![FF](graphics/pcb_upper.png) -->
 
