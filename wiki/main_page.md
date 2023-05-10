@@ -16,6 +16,8 @@ development is active debris removal and on-orbit servicing. The system aims at 
 
 The wiki is divided into different sections and pages providing all the necessary information. You can find this structure on the left side of the page in the sidebar as well:
 
+---
+
 - Overview over the ELISSA system and its subsystems
   - [System Overview](overview)
     - [Lab Environment](overview#lab-environment)
@@ -46,6 +48,8 @@ The wiki is divided into different sections and pages providing all the necessar
     - [Development Best Practice](dev_guides#development-best-practice)
 - Documentation for the Astrobee environment
   - [Astrobee Environment](astrobee)
+
+---
 
 ## Further Reading
 

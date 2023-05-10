@@ -6,6 +6,19 @@ The Hannibal freeflyer is the second freeflyer used within the ELISSA testbed. I
 
 <img src="wiki/graphics/hannibal.jpg" alt="The Hannibal freeflyer" width="400">
 
+---
+
+- [Hannibal Class Freeflyers](#hannibal-class-freeflyers)
+  - [Generic Module Platform](#generic-module-platform)
+  - [Propulsion Module](#propulsion-module)
+    - [Propellers](#propellers)
+    - [Motors](#motors)
+    - [MCMU](#mcmu)
+  - [Service Module](#service-module)
+    - [OBC](#obc)
+    - [PCDU](#pcdu)
+
+---
 <!-- ![The Hannibal freeflyer](graphics/hannibal.jpg) -->
 
 ## Generic Module Platform
