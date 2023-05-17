@@ -8,17 +8,37 @@ Before starting the printing operation:
 - Placed the freeflyer next to the printing table
 Launch the printing package:
 ```bash
-roslaunch elissa3_print hannibal_print_single.launch ...
+roslaunch elissa3_print hannibal_print_single.launch lab_mode:="true" pid_ctl:="true" smc_ctl:="false" robot:="true" printhead:="true" eso:="false"
 ```
+Optional arguments:
+- force (boolean): Use the force sensors in the chaser docking module
+- printhead (boolean): Enable the heating of the printhead (if disabled, see commands below)
 Move the robot arm above the table:
 ```bash
 rostopic pub /MecademicRobot_command std_msgs/String "MoveJoints(0,30,0,0,-30,90)"
 ```
 Move the robot arm closer to the table top:
+```bash
+rostopic pub /MecademicRobot_command std_msgs/String "MoveLinRelWRF(0,0,-2.5,0,0,0)" 
+```
+The third value is the distance in the z-direction and can be used to move the robot arm closer to the table.
 ...
 Run the printing node to forward the commands:
 ```bash
-...
+rosrun elissa3_print print_trajectory.py __ns:=hannibal _sat_name:="hannibal"
+```
+Open the teleop client:
+```bash
+rosrun elissa3_print teleop_cli_print.py
+```
+The following commands are necessary to start the printing operation:
+- T: Get to the printing menu
+- C: Load a csv file (enter the path, i.e. _cd /home/elissa/catkin_ws/src/elissa3_print/misc/Trajectories/Compensation_data.csv_)
+- S: To start the setup (printhead is heated)
+- R: Run the trajectory and start the print
+Monitor the hotend heat with the following command in another terminal:
+```bash
+rostopic echo /arduino/actual_temp
 ```
 ## Abort / Stop a Printing Operation
 
