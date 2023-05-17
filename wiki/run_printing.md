@@ -58,4 +58,8 @@ Before shutting the active `roslaunch` and `rosrun` commands, deactivate the fan
 ```bash
 rostopic pub /arduino/fan_hotend std_msgs/Bool "data: false"
 rostopic pub /arduino/fan_part std_msgs/Bool "data: false"
+
+## Appendix
+
+[Link to the motor controller board](https://reprap.org/wiki/RAMPS_1.4)
 ```
