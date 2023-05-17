@@ -44,11 +44,11 @@ rostopic echo /arduino/actual_temp
 
 Set the hotend temperature to zero: 
 ```bash
-rostopic pub /arduino/hotend_temp "data: 0"
+rostopic pub /arduino/hot_end_temp std_msgs/Float32 "data: 0"
 ```
 Set the extruber distance to zero to stop the motor:
 ```bash
-rostopic pub /arduino/extruder_distance "data: 0"
+rostopic pub /arduino/extrude_distance std_msgs/Float32 "data: 0"
 ```
 Wait for the hotend temperature to be below 40°C before proceeding. Monitor the temperature with:
 ```bash
@@ -56,6 +56,6 @@ rostopic echo /arduino/actual_temp
 ```
 Before shutting the active `roslaunch` and `rosrun` commands, deactivate the fans with:
 ```bash
-rostopic pub /arduino/fan_hotend "data: false"
-rostopic pub /arduino/fan_part "data: false"
+rostopic pub /arduino/fan_hotend std_msgs/Bool "data: false"
+rostopic pub /arduino/fan_part std_msgs/Bool "data: false"
 ```
