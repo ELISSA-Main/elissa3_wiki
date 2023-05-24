@@ -1,23 +1,14 @@
 # Run the Laboratory
 
-tbd
+To run experiments in the laboratory the operator must follow different instruction. To setup the ELISSA laboratory, the following checklist must be followed:
 
-## Begin Operations
+- [**Begin operations**](begin_operations)
 
-tbd
+To finish the operations and shutdown the laboratory, the following checklist must be followed:
 
-## Finish Operations
+- [**End operations**](end_operations)
 
-tbd
+Depending on the aim of the experiments, different procedures apply for different scenarios:
 
-## Tipps and Tricks
-
-tbd
-
-## Docking Scenario
-
-tbd
-
-## Printing Scenario
-
-tbd
+- [**Docking scenario**](run_docking)
+- [**Printing scenario**](run_printing)
