@@ -41,6 +41,8 @@ Table of Content:
     - [Tipps and Tricks](run_laboratory#tipps-and-tricks)
     - [Docking Scenario](run_laboratory#docking-scenario)
     - [Printing Scenario](run_laboratory#printing-scenario)
+  - [Optitrack Maintenance](optitrack)
+    - [Recalibrating Optitrack](optitrack#recalibrating-optitrack)
 - Guides for the development of ELISSA software
   - [Developer Guides](dev_guides)
     - [Software and Package Structure](dev_guides#software-and-package-structure)
