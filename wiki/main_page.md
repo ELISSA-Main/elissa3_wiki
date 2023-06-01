@@ -43,6 +43,8 @@ Table of Content:
     - [Printing Scenario](run_laboratory#printing-scenario)
   - [Optitrack Maintenance](optitrack)
     - [Recalibrating Optitrack](optitrack#recalibrating-optitrack)
+  - [Other Tutorials](tutorials)
+    - [Setting up the extruder controller](printing_controller)
 - Guides for the development of ELISSA software
   - [Developer Guides](dev_guides)
     - [Software and Package Structure](dev_guides#software-and-package-structure)
