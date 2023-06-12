@@ -29,6 +29,12 @@ Table of Content:
   - [Hamilcar Class Freeflyers](hamilcar)
 - User guides explaning the operation procedures
   - [Installation](installation)
+    - [Installing ROS](installation#installing-ros)
+    - [Setting up a catkin Workspace](installation#setting-up-a-catkin-workspace)
+    - [Adding ELISSA repositories](installation#adding-elissa-repositories)
+    - [Network Configuration](installation#network-configuration)
+    - [Setting up VSCode](installation#setting-up-vscode)
+    - [Installing additional ROS Packages](installation#installing-additional-ros-packages)
   - [Run a Simulation](run_simulation)
     - [Single Freeflyer](run_simulation#single-freeflyer)
     - [Multiple Freeflyer](run_simulation#multiple-freeflyer)
