@@ -29,7 +29,7 @@ Currrent ROS version : NOETIC
 2. Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse."
 Do this by going into your "Software & Updates" application under the Ubuntu Software Tab and checking all required boxes. 
 
-<br> <img src="wiki/graphics/Software Sources.png" alt="Software Sources" width="400">
+<br> <img src="wiki/graphics/Software Sources.png" alt="Software Sources" width="800">
 
 3. Update your Sources List to accept software from packages.ros.org by entering the following command:
 
