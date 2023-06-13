@@ -5,13 +5,13 @@ To run the operations in the laboratory some major steps must be followed. This 
 ---
 Table of Content:
 - [Begin Operations](#begin-operations)
-  - [Preparation](#preparation)
-  - [Run the Software](#run-the-software)
-  - [Freeflyer](#freeflyer)
-  - [Operation](#operation)
+	- [Preparation](#preparation)
+	- [Run the Software](#run-the-software)
+	- [Freeflyer](#freeflyer)
+	- [Operation](#operation)
 - [Appendix](#appendix)
-  - [Settings for the Blower Control](#settings-for-the-blower-control)
-  - [Activate Hannibal Class Freeflyers](#activate-hannibal-class-freeflyers)
+	- [Settings for the Blower Control](#settings-for-the-blower-control)
+	- [Activate Hannibal Class Freeflyers](#activate-hannibal-class-freeflyers)
 ---
 Other useful pages:
 [Launch Scenarios](run_laboratory), [End Operations](end_operations)
