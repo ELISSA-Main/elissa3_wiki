@@ -13,7 +13,7 @@
   <figcaption>Hamilcar and Red Five in the revised Ausf. B Design<figcaption>
 <figure>
 
-  ---
+---
   Table of Content:
 - [Hamilcar Class Free-Flyers](#hamilcar-class-freeflyers)
   - [Payload Module](#payload-module)
