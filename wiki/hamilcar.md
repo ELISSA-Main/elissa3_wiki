@@ -25,7 +25,6 @@
 
 ---
   
-  
 ## Payload Module
 
 The payload module (PM) is constructed out of 20x20 Aluminum profiles, providing a versatile and modular structure for attaching payloads. Most commonly, this includes the *Gecko-Docking Mechanism* and the *Arduino KFL Science Payload* used for teaching. OptiTrack markers are also attached to the PM. Magnetic lids on the payload base provide access into the Service Module bay.
