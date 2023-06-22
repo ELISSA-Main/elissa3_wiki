@@ -9,7 +9,7 @@
 <figure-->
 
 <figure>
-  <img src="graphics/hamilcar_red_five.jpg" alt="Hamilcar and Red Five in the revised Ausf. B Design" width="50%" height="50%">
+  <img src="wiki/graphics/hamilcar_red_five.jpg" alt="Hamilcar and Red Five in the revised Ausf. B Design" width="50%" height="50%">
   <figcaption>Hamilcar and Red Five in the revised Ausf. B Design<figcaption>
 <figure>
 
