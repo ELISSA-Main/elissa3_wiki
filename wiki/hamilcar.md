@@ -27,15 +27,19 @@
   
   
 ## Payload Module
+
 The payload module (PM) is constructed out of 20x20 Aluminum profiles, providing a versatile and modular structure for attaching payloads. Most commonly, this includes the *Gecko-Docking Mechanism* and the *Arduino KFL Science Payload* used for teaching. OptiTrack markers are also attached to the PM. Magnetic lids on the payload base provide access into the Service Module bay.
   
 ## Service Module
+
 The Service Module (SM) houses the on-board computer (OBC), on-board power supply and provides additional space for housing electronics. The SM upper features the FF's name printed onto the left and right sides, allowing for easy identification. 
   
 ### OBC
+
 A *Raspberry Pi 3 B* is utilized as the OBC.
   
 ## Propulsion Module
+
 zoom zoom
   
 ### Propulsion Units
