@@ -81,7 +81,7 @@ This guide is based on [this repository](https://github.com/lesaf92/ros_noetic_u
 
 1. Install utils
 ```shell
-sudo apt-get install htop python3-pip net-tools curl
+sudo apt-get install htop python3-pip net-tools curl python3-pil python3-pil.imagetk
 ```
 2. Install mamba
 ```shell
