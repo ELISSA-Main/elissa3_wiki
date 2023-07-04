@@ -4,6 +4,7 @@
 
 - [Pull all repositories at once](pull_multiple_repos)
 - [Remote Connection to the Internet using SSHuttle](sshuttle)
+- [Hamilcar OBS Installation](install_hamilcar_obs)
 
 ## Software and Package Structure
 

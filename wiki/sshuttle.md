@@ -6,12 +6,13 @@ To update the software, configure parameters or fix bugs it is essential to work
 Table of Content:
 - [Remote work on the Hamilcar On-Board Computer](#remote-work-on-the-hamilcar-on-board-computer)
   - [Enable an Internet Connection](#enable-an-internet-connection)
-    - [Installation of sshuttle](#installation-of-shuttle)
+    - [Installation of sshuttle](#installation-of-sshuttle)
+    - [Installation without Internet on the Remote](#installation-without-internet-on-the-remote)
     - [Execute sshuttle](#execute-sshuttle)
     - [Usage](#usage)
 
 ---
-Other usefull pages: [Hamilcar Freeflyers](hamilcar), [Network IDs](https://github.com/ELISSA-IRAS/elissa_wiki/blob/master/testbed/network.md)
+Other usefull pages: [Hamilcar Freeflyers](hamilcar), [Hamilcar OBS](install_hamilcar_obs), [Network IDs](https://github.com/ELISSA-IRAS/elissa_wiki/blob/master/testbed/network.md)
 
 ---
 
@@ -33,6 +34,23 @@ pip3 install sshuttle
 ```
 
 The other [available options](https://sshuttle.readthedocs.io/en/stable/installation.html) did not run on the Raspberry Pi of Red Five. 
+
+### Installation without Internet on the Remote
+
+If no internet connection is available on the remote machine, the follwing steps must be done for an installation:
+
+1. Download the [sshuttle repository](https://github.com/sshuttle/sshuttle) as a zip file
+2. Copy this zip file to the remote via ssh:
+
+```bash
+scp /home/<sansa-username>/Downloads <remote-username>@<remote-ip>:/path/to/remote/file
+```
+3. [Install](https://stackoverflow.com/questions/15031694/installing-python-packages-from-local-file-system-folder-to-virtualenv-with-pip) the pip-package using the file:
+
+```bash
+pip install sshuttle --no-index --find-links file:///path/to/remote/file
+```
+4. Restart the system.
 
 ### Execute sshuttle
 

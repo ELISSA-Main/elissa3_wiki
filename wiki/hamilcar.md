@@ -8,22 +8,25 @@
   <figcaption>Hamilcar FF in the revised Ausf. B design<figcaption>
 <figure-->
 
-<figure>
+<!--figure>
   <img src="wiki/graphics/hamilcar_red_five.jpg" alt="Hamilcar and Red Five in the revised Ausf. B Design" width="50%" height="50%">
   <figcaption>Hamilcar and Red Five in the revised Ausf. B Design<figcaption>
-<figure>
+<figure-->
+
+<img src="wiki/graphics/hamilcar_red_five.jpg" alt="Hamilcar and Red Five in the revised Ausf. B Design" width="50%" height="50%">
 
 ---
-  Table of Content:
-- [Hamilcar Class Free-Flyers](#hamilcar-class-freeflyers)
+Table of Content:
+- [Hamilcar Class Freeflyers](#hamilcar-class-freeflyers)
   - [Payload Module](#payload-module)
   - [Service Module](#service-module)
     - [OBC](#obc)
-  - [Propulsion Module](#propulsion-module)    
+  - [Propulsion Module](#propulsion-module)
     - [Propulsion Units](#propulsion-units)
     - [MCMU](#mcmu)
 
 ---
+Other usefull pages: [Hamilcar OBS Installation](install_hamilcar_obs)
   
 ## Payload Module
 
