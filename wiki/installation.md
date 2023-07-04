@@ -92,7 +92,6 @@ bash Mambaforge-$(uname)-$(uname -m).sh
 ```shell
 mamba create -n ros_env python=3.9 -c conda-forge
 mamba activate ros_env
-conda config --env --add channels conda-forge
 conda config --env --add channels robostack-staging
 # remove the defaults channel just in case, this might return an error if it is not in the list which is ok
 conda config --env --remove channels defaults
@@ -137,7 +136,7 @@ The required Repositories are:
 - elissa3_drap
 - elissa3_estop
 - elissa3_fad
-- elissa3_gazeebo
+- elissa3_gazebo
 - elissa3_gnc
 - elissa3_gui
 - elissa3_hamilcar
