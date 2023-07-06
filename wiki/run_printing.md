@@ -74,3 +74,4 @@ rostopic pub /arduino/fan_part std_msgs/Bool "data: false"
 ## Appendix
 
 [Link to the motor controller board](https://reprap.org/wiki/RAMPS_1.4)
+[Link to the motor controller setup](https://all3dp.com/2/vref-calculator-tmc2209-tmc2208-a4988/)
