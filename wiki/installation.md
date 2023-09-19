@@ -16,6 +16,8 @@ Table of Content:
 
 ## Installing ROS
 
+**DISCLAIMER** Beware that the ROS installation is more complicated for newer versions of Ubuntu and may cause packages to break. It is therefore strongly recommended to use Ubuntu 20.04. **Using a newer version of Ubuntu will likely cause many, many issues!!!**
+
 ### Standard Installation on Ubuntu 20.04
 
 This is the standard ROS installation with bash setup included. 
