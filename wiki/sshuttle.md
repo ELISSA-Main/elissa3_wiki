@@ -23,7 +23,7 @@ One way to use the Hamilcar freeflyers with the internet is the connection of a 
 - [x] Red Five
 - [ ] Hamilcar
 - [ ] Hannibal
-- [ ] Pegasus
+- [x] Pegasus
 
 ### Installation of sshuttle
 
