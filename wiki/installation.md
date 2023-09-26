@@ -42,7 +42,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 4. Set up your keys by entering the following commands:
 
 ```shell
-sudo apt install curl # if you haven't already installed curl
+sudo apt install curl python3-pil python3-pil.imagetk # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
