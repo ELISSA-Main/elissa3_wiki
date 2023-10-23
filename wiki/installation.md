@@ -131,9 +131,9 @@ source ~/.bashrc
 
 ## Adding ELISSA repositories
 
-To be able to launch all scenarios in the ELISSA environment a multitude of ROS packages are required. These can be found in the ELISSA Git and should be cloned into the catkin_ws.
+To be able to launch all scenarios in the ELISSA environment a multitude of ROS packages are required. These can be found in the ELISSA Git and should be cloned into the catkin_ws/src directory.
 Clone all required repositories into the src folder.
-The required Repositories are:
+The minimum required repositories are:
 - elissa3
 - elissa3_drap
 - elissa3_estop
@@ -145,7 +145,7 @@ The required Repositories are:
 - elissa3_hamilcar_OBS
 - elissa3_hannibal
 - elissa3_mvm
-- elissa3_print
+- elissa3_issi
 
 ## Network Configuration
 
