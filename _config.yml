@@ -3,7 +3,7 @@ title: ELISSA Wiki
 # Remote theme used to include more files
 remote_theme: Drassil/git-wiki-theme@master
 # Description of the wiki
-description: This wiki documents the ELISSA project of the Institute for Space Systems at the TU Braunschweig.
+description: This wiki documents the ELISSA project of the Institute for Space Systems at the TU Braunschweig and the Chair of Space Technology at TU Berlin.
 # Able to download wiki pages
 show_downloads: true
 # Show the wiki pages
