@@ -157,4 +157,15 @@ tbd
 
 ## Adding additional ROS Packages
 
-tbd
+Installing additional ROS packages is done through the command line with commands of the following syntax:
+
+```shell
+sudo apt-get install ros-${ROS_DISTRO}-${ROS_PKG}
+```
+
+The ROS distribution of ELISSA is **Kinetic**. Installing the ROS Serial package for example would be achieved by entering the following commands into the terminal:
+
+```shell
+sudo apt-get install ros-kinetic-rosserial-arduino
+sudo apt-get install ros-kinetic-rosserial
+```
