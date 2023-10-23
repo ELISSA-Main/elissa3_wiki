@@ -63,21 +63,25 @@ Table of Content:
 
 ## Further Reading
 
-Besides this wiki, multiple papers are published concerning the testbed and conducted experiments:
+Besides this wiki, multiple publications concerning the testbed and conducted experiments are available:
 
-[*Trentlage, C., et al. "The elissa laboratory: Free-floating satellites for space-related research." Deutscher Luft-und Raumfahrtkongress. 2018.*](https://www.researchgate.net/profile/Mohamed-Ben-Larbi/publication/327982192_The_ELISSA_Laboratory_Free-Floating_Satellites_for_Space-Related_Research/links/5bb1fd55299bf13e60597aed/The-ELISSA-Laboratory-Free-Floating-Satellites-for-Space-Related-Research.pdf)
+[Huwald, M., et al., *Characterizaztion of Gecko-Inspired Dry Adhesion with a Free-Floating Target*, 16th Pico- and Nano-Satellite Workshop on "Technologies for Small Satellite Research, 2023](https://www.researchgate.net/publication/374234851_Characterization_of_Gecko-Inspired_Dry_Adhesion_with_a_Free-Floating_Target)
 
-[*Jonckers, D., et al. "Additive Manufacturing of Large Structures Using Free-Flying Satellites. Front." Space Technol 3 (2022): 879542.*](https://leopard.tu-braunschweig.de/servlets/MCRFileNodeServlet/dbbs_derivate_00049688/Thakur_frspt-03-879542.pdf)
+[Ben-Labi, M. K., et al., *Experimental Characterization of Additive Manufacturing Using a Small Satellite With a Robotic Manipulator*, Deutscher Luft- und Raumfahrtkongress, 2023](https://www.researchgate.net/publication/374234234_EXPERIMENTAL_CHARACTERIZATION_OF_ADDITIVE_MANUFACTURING_USING_A_SMALL_SATELLITE_WITH_A_ROBOTIC_MANIPULATOR)
 
-[*Yang, Juntang, et al. "Concept and feasibility evaluation of distributed sensor-based measurement systems using formation flying multicopters." Atmosphere 12.7 (2021): 874.*](https://www.mdpi.com/2073-4433/12/7/874)
+[Ben-Larbi, M. K., et al. *Orbital debris removal using micropatterned dry adhesives: Review and recent advances*, Progress in Aerospace Sciences 134 (2022): 100850](https://www.sciencedirect.com/science/article/abs/pii/S0376042122000422)
 
-[*Trentlage, Christopher, and Enrico Stoll. "A biomimetic docking mechanism for controlling uncooperative satellites on the ELISSA free-floating laboratory." 2018 3rd International Conference on Advanced Robotics and Mechatronics (ICARM). IEEE, 2018.*](https://ieeexplore.ieee.org/abstract/document/8610791)
+[Jonckers, D., et al., *Additive Manufacturing of Large Structures Using Free-Flying Satellites*, Frontires in Space Technology 3 (2022): 879542](https://leopard.tu-braunschweig.de/servlets/MCRFileNodeServlet/dbbs_derivate_00049688/Thakur_frspt-03-879542.pdf)
 
-[*Ben-Larbi, Mohamed Khalil, et al. "Orbital debris removal using micropatterned dry adhesives: Review and recent advances." Progress in Aerospace Sciences 134 (2022): 100850.*](https://www.sciencedirect.com/science/article/abs/pii/S0376042122000422)
+[Yang, J, et al., *Concept and feasibility evaluation of distributed sensor-based measurement systems using formation flying multicopters* Atmosphere 12.7 (2021): 874](https://www.mdpi.com/2073-4433/12/7/874)
+
+[Trentlage, C., and Stoll E., *A biomimetic docking mechanism for controlling uncooperative satellites on the ELISSA free-floating laboratory*, 2018 3rd International Conference on Advanced Robotics and Mechatronics (ICARM). IEEE, 2018](https://ieeexplore.ieee.org/abstract/document/8610791)
+
+[Trentlage, C., et al., *The ELISSA Laboratory: Free-Floating Satellites for Space-Related Research* Deutscher Luft-und Raumfahrtkongress, 2018](https://www.researchgate.net/profile/Mohamed-Ben-Larbi/publication/327982192_The_ELISSA_Laboratory_Free-Floating_Satellites_for_Space-Related_Research/links/5bb1fd55299bf13e60597aed/The-ELISSA-Laboratory-Free-Floating-Satellites-for-Space-Related-Research.pdf)
 
 For team members, additional material like thesis and other documents are available here:
 
-[*ELISSA 2 wiki document fodler*](https://github.com/ELISSA-IRAS/elissa_wiki/tree/master/documents)
+[*ELISSA 2 wiki document folder*](https://github.com/ELISSA-IRAS/elissa_wiki/tree/master/documents)
 
 ## Contributing to this Wiki
 
