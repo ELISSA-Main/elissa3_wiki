@@ -163,9 +163,9 @@ Installing additional ROS packages is done through the command line with command
 sudo apt-get install ros-${ROS_DISTRO}-${ROS_PKG}
 ```
 
-The ROS distribution of ELISSA is **Kinetic**. Installing the ROS Serial package for example would be achieved by entering the following commands into the terminal:
+The ROS distribution of ELISSA is **Noetic**. Installing the ROS Serial package for example would be achieved by entering the following commands into the terminal:
 
 ```shell
-sudo apt-get install ros-kinetic-rosserial-arduino
-sudo apt-get install ros-kinetic-rosserial
+sudo apt-get install ros-noetic-rosserial-arduino
+sudo apt-get install ros-noetic-rosserial
 ```
