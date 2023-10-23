@@ -29,8 +29,8 @@ The laboratory room with the air bearing table is shown in the image below. The 
 | | length (x) | width (y) |
 | - | :-: | :-: |
 | Table | 7 m | 4 m |
-Small panel | 1,75 m | 0,8 m |
-Large panel | 2,33 m | 0,8 m |
+Small panel | 1.75 m | 0.8 m |
+Large panel | 2.33 m | 0.8 m |
 
 ![The lab environment](graphics/elissa_tisch.jpg)
 
@@ -55,9 +55,12 @@ Furthermore each freeflyer can use mission specific payloads. The concrete detai
 - [*Hannibal*](hannibal) class freeflyers:
   - Hannibal
   - Pegasus
+  - Galactica
 - [*Hamilcar*](hamilcar) class freeflyers:
   - Hamilcar
   - Red Five
+  - Ishimura (Exhibition Model)
+  - Moonraker (in construction)
 
 Detail information about the freeflyers are provided on the linked pages. Each freeflyer has eight propellers to move it on the testbed. They are controlled by the Motor Control Unit (MCMU), which receives the commands from a corresponding node on the on-board computer of the freeflyer. This computer is connected to the mission control computer via a wireless network. It is integrated in the same ROS network and receives the commands from the Force Allocation Module (FAM). An overview of the ROS relations is given on the [ROS architecture](ros_architecture) page. The different possible payloads are related to the experiment types, which are described in the [following section](#experiment-types).
 
