@@ -5,13 +5,13 @@ published: true
 
 # ELISSA Wiki
 
-> **Disclaimer:** This wiki is used to document the ELISSA project, which is actively maintained at the [Institute of Space Systems](https://www.space-systems.eu) at the TU Braunschweig. The repositories containing the source code are private and only visible for the team members. If you are interested in the project, please contact the institute head.
+> **Disclaimer:** This wiki is used to document the ELISSA research environment, which is actively developed and maintained by the [Institute of Space Systems](https://www.space-systems.eu) at the TU Braunschweig and the [Chair of Space Technology](https://www.tu.berlin/en/raumfahrttechnik) at TU Berlin. The repositories containing the source code are private and only visible for the team members. If you are interested in the project, please contact the institute head of the Insitute of Space Systems (IRAS) or the Lead of the SmallSat Rendezvous & Robotics group at the Chair of Space Technology (RFT).
 
 This wiki aims to document the ELISSA project and serves as a knowledge base. It is intended to provide 
 information to the testbed operators and developers and can serve as an input for documents such as technical notes or other publications. It develops its full potential when the pages are actively maintained. If you find an error or want to add missing information, feel free to edit the page or create a pull request.
 
-The ELISSA system is a laboratory at Institute of Space Systems (IRAS) of the TU Braunschweig. It provides an air bearing
-table to allow for a friction less movement of satellite mock-ups with three degrees of freedom (DOF). The driver for the
+ELISSA includes the Robot Operating System (ROS)-based software framework and an air-bearing laboratory situated at IRAS of the TU Braunschweig. 
+It provides an air bearing table to allow for a friction less movement of satellite mock-ups with three degrees of freedom (DOF). The driver for the
 development is active debris removal and on-orbit servicing. The system aims at hardware in the loop simulations of distributed and small satellite systems. A Robot Operating System (ROS) environment is used to conduct the experiments.
 
 The wiki is divided into different sections and pages providing all the necessary information. You can find this structure on the left side of the page in the sidebar as well:
