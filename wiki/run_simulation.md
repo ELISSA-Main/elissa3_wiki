@@ -25,7 +25,7 @@ rosrun elissa3_gui sat_com_app.py hamilcar
 ```
 
 The name of the to-be controlled FF must be passed in all lower caps.
-![Hamilcar Sat Com GUI](/elissa3_wiki/wiki/graphics/hamilcar_sat_com_gui.png)
+<img src="wiki/graphics/hamilcar_sat_com_gui.png" alt="Hamilcar SAT COM GUI" width="70%" height="70%">
 
 <!-- TODO Add image of GUI and simulation -->
 <!-- TODO add some of the defaults? -->
