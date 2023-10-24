@@ -14,8 +14,10 @@ roslaunch elissa3 docking.launch lab_mode:=false sim_mode:=true
 The **lab_mode** and **sim_mode** arguments must be set apropriately.
 This will launch the simulation and spawn with the lead *Hamilcar* FF. An RViz visualization will pop up show the FF.
 For details on other launch arguments that can be passed to the launch command, refer to the *hamilcar_single.launch* file.
-Controlling the FF can be done using either a teleop CLI or via a GUI.
 
+<img src="wiki/graphics/hamilcar_single_sim.png" alt="Hamilcar single sim in RViz" width="50%" height="50%">
+
+Controlling the FF can be done using either a teleop CLI or via a GUI.
 The simple satellite command gui can be launched by opening another terminal session and entering:
 
 ```shell
