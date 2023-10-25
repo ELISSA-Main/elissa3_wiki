@@ -8,7 +8,10 @@
 
 ## Software and Package Structure
 
-tbd
+The general structure of the ELISSA3 packages can be seen below.
+Some packages may contain less or more subdirectories, FF packages such as *elissa3_hamilcar* and *elissa3_hannibal*, for example additionally contain subdirectories for the URDF files.
+<img src="wiki/graphics/elissa_pkg_structure.png" alt="ELISSA3 Pkg Structure" width="70%" height="70%">
+
 
 ## ROS Structure
 
