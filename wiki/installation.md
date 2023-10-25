@@ -25,53 +25,37 @@ This is the standard ROS installation with bash setup included.
 Currrent ROS version : NOETIC
 
 1. The suggested operating system for ROS is Linux (more specifically the Ubuntu or Debian distributions) so make sure to have it installed in your machine. There are experimental versions avaiable for Windows and Arch Linux. Refer to the ROS documentation for further information on experimental versions. 
-
 > Beware that the ROS installation is more complicated for newer versions of Ubuntu. It is recommended to use Ubuntu 20.04. If you want to use a newer version see the guide below.
-
 2. Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse."
 Do this by going into your "Software & Updates" application under the Ubuntu Software Tab and checking all required boxes. 
-
 <br> <img src="wiki/graphics/Software Sources.png" alt="Software Sources" width="800">
-
 3. Update your Sources List to accept software from packages.ros.org by entering the following command:
-
 ```shell
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 ```
-
 4. Set up your keys by entering the following commands:
-
 ```shell
 sudo apt install curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
-
 5. Install some additional dependcies:
-
 ```shell
 sudo apt install curl python3-pil python3-pil.imagetk
 ```
-
 6. Update your system before the installation
-
 ```shell
 sudo apt update
 ```
-
 7. Now start the full ROS installation with the following command. See [the ROS installation Guide](http://wiki.ros.org/noetic/Installation/Ubuntu) for more detailled information on different installation commands. The here provided command installs the full ROS desktop package.
-
 ```shell
 sudo apt install ros-noetic-desktop-full
 ```
-
 8. Now all thats left is to format your bash terminal to operate in the ROS environment. The following command formats the bash terminal once.
-
 ```shell
 source /opt/ros/noetic/setup.bash
 ```
 
 If you want to automatically source this script every time a new terminal is launched use the following commands once. 
-
 ```shell
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
