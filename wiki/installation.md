@@ -115,7 +115,7 @@ conda activate ros_env
 roscore
 ```
 --- 
-
+-->
 ## Setting up a catkin Workspace
 
 To create a catkin workspace that holds all code and helps to build the project use the following commands.
@@ -128,7 +128,7 @@ catkin_make
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
--->
+
 
 ## Adding ELISSA repositories
 
