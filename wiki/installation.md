@@ -42,23 +42,29 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 4. Set up your keys by entering the following commands:
 
 ```shell
-sudo apt install curl python3-pil python3-pil.imagetk # if you haven't already installed curl
+sudo apt install curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
-5. Update your system before the installation
+5. Install some additional dependcies:
+
+```shell
+sudo apt install curl python3-pil python3-pil.imagetk
+```
+
+6. Update your system before the installation
 
 ```shell
 sudo apt update
 ```
 
-6. Now start the full ROS installation with the following command. See [the ROS installation Guide](http://wiki.ros.org/noetic/Installation/Ubuntu) for more detailled information on different installation commands. The here provided command installs the full ROS desktop package.
+7. Now start the full ROS installation with the following command. See [the ROS installation Guide](http://wiki.ros.org/noetic/Installation/Ubuntu) for more detailled information on different installation commands. The here provided command installs the full ROS desktop package.
 
 ```shell
 sudo apt install ros-noetic-desktop-full
 ```
 
-7. Now all thats left is to format your bash terminal to operate in the ROS environment. The following command formats the bash terminal once.
+8. Now all thats left is to format your bash terminal to operate in the ROS environment. The following command formats the bash terminal once.
 
 ```shell
 source /opt/ros/noetic/setup.bash
@@ -70,7 +76,7 @@ If you want to automatically source this script every time a new terminal is lau
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
-8. Check whether your installation was successfull by running
+9. Check whether your installation was successfull by running
 ```shell
 roscore
 ```
