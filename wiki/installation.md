@@ -134,10 +134,9 @@ source ~/.bashrc
 
 To be able to launch all scenarios in the ELISSA environment a multitude of ROS packages are required. These can be found in the ELISSA Git and should be cloned into the catkin_ws/src directory.
 Clone all required repositories into the src folder.
-The minimum required repositories are:
+The minimum required repositories to run simulations are:
 - elissa3
 - elissa3_drap
-- elissa3_estop
 - elissa3_fad
 - elissa3_gazebo
 - elissa3_gnc
