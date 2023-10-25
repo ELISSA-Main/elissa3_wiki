@@ -8,7 +8,7 @@ Launch files for single FF simulations are provided for the *Hamilcar* and the *
 To launch a simple simulation for a single Hamilcar class FF open a terminal session and enter:
 
 ```shell
-roslaunch elissa3 docking.launch lab_mode:=false sim_mode:=true
+roslaunch elissa3 hamilcar_single.launch lab_mode:=false sim_mode:=true
 ```
 
 The **lab_mode** and **sim_mode** arguments must be set apropriately.
