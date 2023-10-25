@@ -77,7 +77,7 @@ roscore
 
 ROS is now succesfully installed on your workstation. You can see the following tutorials on how to set up a catkin workstation and how to clone the ELISSA repos to finallize your setup.
 
-### ROS Installation on Ubuntu 22.04
+<!--### ROS Installation on Ubuntu 22.04
 
 This guide is based on [this repository](https://github.com/lesaf92/ros_noetic_ubuntu22/blob/main/README.md?plain=1).
 
@@ -128,6 +128,7 @@ catkin_make
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
+-->
 
 ## Adding ELISSA repositories
 
