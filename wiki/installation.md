@@ -54,7 +54,6 @@ sudo apt install ros-noetic-desktop-full
 ```shell
 source /opt/ros/noetic/setup.bash
 ```
-
 If you want to automatically source this script every time a new terminal is launched use the following commands once. 
 ```shell
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
