@@ -100,6 +100,10 @@ Follow these simple steps:
 cd astrobee/src
 git clone git@github.com:${ELISSA-ORGANIZATION}/${REPOSITORY}.git
 ```
-2. 
+2. Change back into astrobee and build:
+```shell
+cd ..
+catkin build
+```
 
 
