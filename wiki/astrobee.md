@@ -1,7 +1,9 @@
 # Astrobee
 
 This page provides a short overview on the Astrobee ROS framework and information on installing the ROS Astrobee Flight Softwares (AFS).
+
 Detailed information on Astrobee including setup and usage is available through their GitHub pages documentation: [NASA Astrobee Robot Software](https://nasa.github.io/astrobee/v/master/index.html)
+
 ---
 Table of Content:
 - [Astrobee](#astrobee)
@@ -24,6 +26,63 @@ In this case you will not have to reinstall ROS, simply follow these steps:
 
 ### Clone and build AFS 
 
-Next, begin with the installation of the AFS.
+Next, begin with the installation of the AFS. This is a condensed version of the more detailed guide provided by NASA.
+For most of our use cases we will also not require the Astrobee Android submodule.
 The Astrobee GitHub repository can be found here: [Astrobee repository](https://github.com/nasa/astrobee).
 Detailed information on installation for non-NASA users can be found here: [Install for general users](https://nasa.github.io/astrobee/v/master/install-nonNASA.html)
+
+1. Open a new terminal session and first make sure your system is up-to-date:
+```shell
+sudo apt-get install build-essential git
+```
+2.  Export the Astrobee install path:
+```shell
+export ASTROBEE_WS=$HOME/astrobee
+```
+3. Clone the AFS and add the media submodule:
+```shell
+git clone git@github.com:nasa/astrobee.git $ASTROBEE_WS/src
+pushd $ASTROBEE_WS/src
+git submodule update --init --depth 1 description/media
+popd
+``` 
+4. Update your system, just in case:
+```shell
+sudo apt-get update
+sudo apt-get upgrade
+```
+5. Install dependencies:
+```shell
+pushd $ASTROBEE_WS
+cd src/scripts/setup
+./add_ros_repository.sh
+sudo apt-get update
+cd debians
+./build_install_debians.sh
+cd ../
+./install_desktop_packages.sh
+sudo rosdep init
+rosdep update
+popd
+```
+Some errors might pop up informing you about packages that could not be found. This can be ignored as they are for NASA interal use only.
+6. Prepare for building the AFS:
+```shell
+pushd $ASTROBEE_WS
+./src/scripts/configure.sh -l -F -D
+source ~/.bashrc
+popd
+```
+7. Build the AFS:
+```shell
+pushd $ASTROBEE_WS
+catkin build
+popd
+```
+8. If your system is running out of memory try building with the **-j1** flag to prevent the build command running in multiple tasks in parallel:
+```shell
+pushd $ASTROBEE_WS
+catkin build -j1
+popd
+```
+
