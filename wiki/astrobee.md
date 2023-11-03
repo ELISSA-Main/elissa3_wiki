@@ -7,10 +7,10 @@ Detailed information on Astrobee including setup and usage is available through 
 ---
 Table of Content:
 - [Astrobee](#astrobee)
-  - [Installing AFS](#install_afs)
-    - [Preparations](#prep_for_afs)
-    - [Clone and build AFS](#clone_build_afs)
-  - [Adding ELISSA Repositories](#add_elissa_to_astrobee)
+  - [Installing AFS](#install-afs)
+    - [Preparations](#prep-for-afs)
+    - [Clone and build AFS](#clone-build-afs)
+  - [Adding ELISSA Repositories](#add-elissa-to-astrobee)
   
 ---
 
@@ -92,5 +92,14 @@ popd
 
 Since ELISSA and Astrobee are both ROS (Noetic) frameworks, code developed for ELISSA can be migrated and integrated into the Astrobee framework.
 Cloning ELISSA repositories follows the same procedure as for ELISSA setup itself.
+Note, however that this should not be done with repositories from main ELISSA organization, as the code will require some modifications for 
+Astrobee integration. There is a dedicated ELISSA organization on GitHub concerned with ELISSA-Astrobee migration: [RFT-RAGGA](https://github.com/RFT-RAGGA)
+Follow these simple steps:
+1. Open a terminal session:
+```shell
+cd astrobee/src
+git clone git@github.com:${ELISSA-ORGANIZATION}/${REPOSITORY}.git
+```
+2. 
 
 
