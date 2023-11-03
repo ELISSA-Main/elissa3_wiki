@@ -10,12 +10,13 @@ Table of Content:
   - [Installing AFS](#install_afs)
     - [Preparations](#prep_for_afs)
     - [Clone and build AFS](#clone_build_afs)
+  - [Adding ELISSA Repositories](#add_elissa_to_astrobee)
   
 ---
 
 ## Installing AFS
 
-**DISCLAIMER** This assumes that you have already setup Ubuntu 20.04., ROS and ELISSA on your machine.
+**DISCLAIMER** This assumes that you have already setup Ubuntu 20.04., ROS Noetic and ELISSA on your machine.
 In this case you will not have to reinstall ROS, simply follow these steps:
 
 ### Preparations
@@ -85,4 +86,11 @@ pushd $ASTROBEE_WS
 catkin build -j1
 popd
 ```
+---
+
+## Adding ELISSA Repositories
+
+Since ELISSA and Astrobee are both ROS (Noetic) frameworks, code developed for ELISSA can be migrated and integrated into the Astrobee framework.
+Cloning ELISSA repositories follows the same procedure as for ELISSA setup itself.
+
 
