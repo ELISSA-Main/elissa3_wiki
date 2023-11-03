@@ -5,12 +5,14 @@ This page provides a short overview on the Astrobee ROS framework and informatio
 Detailed information on Astrobee including setup and usage is available through their GitHub pages documentation: [NASA Astrobee Robot Software](https://nasa.github.io/astrobee/v/master/index.html)
 
 ---
+
 Table of Content:
 - [Astrobee](#astrobee)
   - [Installing AFS](#installing-afs)
     - [Preparations](#preparations)
     - [Clone and build AFS](#clone-and-build-afs)
   - [Adding ELISSA Repositories](#adding-elissa-repositories)
+
 ---
 
 ## Installing AFS
@@ -85,7 +87,6 @@ pushd $ASTROBEE_WS
 catkin build -j1
 popd
 ```
----
 
 ## Adding ELISSA Repositories
 
@@ -103,5 +104,3 @@ git submodule add git@github.com:${ELISSA-ORGANIZATION}/${REPOSITORY}.git
 cd ..
 catkin build
 ```
-
-
