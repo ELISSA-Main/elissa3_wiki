@@ -11,7 +11,6 @@ Table of Content:
     - [Preparations](#preparations)
     - [Clone and build AFS](#clone-and-build-afs)
   - [Adding ELISSA Repositories](#adding-elissa-repositories)
-  
 ---
 
 ## Installing AFS
@@ -95,7 +94,7 @@ Cloning ELISSA repositories follows the same procedure as for ELISSA setup itsel
 Note, however that this should not be done with repositories from main ELISSA organization, as the code will require some modifications for 
 Astrobee integration. There is a dedicated ELISSA organization on GitHub concerned with ELISSA-Astrobee migration: [RFT-RAGGA](https://github.com/RFT-RAGGA)
 Follow these simple steps:
-1. Open a terminal session:
+1. Open a terminal session, change into the Astrobee src directory and start cloning:
 ```shell
 cd astrobee/src
 git clone git@github.com:${ELISSA-ORGANIZATION}/${REPOSITORY}.git
