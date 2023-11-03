@@ -7,10 +7,10 @@ Detailed information on Astrobee including setup and usage is available through 
 ---
 Table of Content:
 - [Astrobee](#astrobee)
-  - [Installing AFS](#install-afs)
-    - [Preparations](#prep-for-afs)
-    - [Clone and build AFS](#clone-build-afs)
-  - [Adding ELISSA Repositories](#add-elissa-to-astrobee)
+  - [Installing AFS](#installing-afs)
+    - [Preparations](#preparations)
+    - [Clone and build AFS](#clone-and-build-afs)
+  - [Adding ELISSA Repositories](#adding-elissa-repositories)
   
 ---
 
