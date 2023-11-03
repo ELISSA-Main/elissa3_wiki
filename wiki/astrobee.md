@@ -90,14 +90,13 @@ popd
 ## Adding ELISSA Repositories
 
 Since ELISSA and Astrobee are both ROS (Noetic) frameworks, code developed for ELISSA can be migrated and integrated into the Astrobee framework.
-Cloning ELISSA repositories follows the same procedure as for ELISSA setup itself.
 Note, however that this should not be done with repositories from main ELISSA organization, as the code will require some modifications for 
 Astrobee integration. There is a dedicated ELISSA organization on GitHub concerned with ELISSA-Astrobee migration: [RFT-RAGGA](https://github.com/RFT-RAGGA)
 Follow these simple steps:
-1. Open a terminal session, change into the Astrobee src directory and start cloning:
+1. Open a terminal session, change into the Astrobee src directory and add ELISSA repo as a submodule:
 ```shell
 cd astrobee/src
-git clone git@github.com:${ELISSA-ORGANIZATION}/${REPOSITORY}.git
+git submodule add git@github.com:${ELISSA-ORGANIZATION}/${REPOSITORY}.git
 ```
 2. Change back into astrobee and build:
 ```shell
