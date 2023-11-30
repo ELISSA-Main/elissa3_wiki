@@ -12,6 +12,9 @@ Table of Content:
     - [Preparations](#preparations)
     - [Clone and build AFS](#clone-and-build-afs)
   - [Adding ELISSA Repositories](#adding-elissa-repositories)
+  - [Setup the Simulation Environment](#setup-the-simulation-environment)
+    - [Activate the NAV cam](#activate-the-nav-cam)
+    - [Replace the Astrobee FF model](#replace-the-astrobee-ff-model)
 
 ---
 
@@ -110,3 +113,32 @@ git submodule add git@github.com:${ELISSA-ORGANIZATION}/${REPOSITORY}.git
 cd ..
 catkin build
 ```
+
+## Setup the Simulation Environment
+
+Using the Astrobee simulator for RAGGA/ELISSA related work requires some further setup.
+This includes changing some default settings and replacing Astrobee files.
+
+### Activate the NAV cam
+
+1. Navigate to the simulation config directory:
+```
+astrobee/src/astrobee/config
+```
+2. Edit the ***simulation.config*** file, by changing the camera sampling rate to a value grater than 0.0, e.g. to:
+```
+nav_cam_rate = 5.0;
+```
+This will allow the simulator to generate images for the NAV cam, in this particular example the images will be generated at a rate of 5 Hz.
+3. Change the NAV cam resolution. First navigate to the urdf directory:
+```
+astrobee/src/description/description/urdf
+```
+4. Edit the ***sensor_nav_cam.xacro.urdf*** file. Change the resolution values to:
+```
+<width>1280</width>
+<height>960</height>
+```
+By default, the NAV cam resolution is reduced in the simulator for lower computational effort.
+
+### Replace the Astrobee FF model
