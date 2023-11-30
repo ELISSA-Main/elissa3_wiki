@@ -87,6 +87,12 @@ pushd $ASTROBEE_WS
 catkin build -j1
 popd
 ```
+9. Now all thats left is to format your bash terminal to operate in the ROS environment and setup automatic sourcing.
+```shell
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+echo "source ~/astrobee/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
 
 ## Adding ELISSA Repositories
 
