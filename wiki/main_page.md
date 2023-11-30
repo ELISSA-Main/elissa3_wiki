@@ -58,6 +58,7 @@ Table of Content:
     - [Development Best Practice](dev_guides#development-best-practice)
 - Documentation for the Astrobee environment
   - [Astrobee Environment](astrobee)
+  - [Run an Astrobee Simulation](run_astrobee_simulation)
 
 ---
 
