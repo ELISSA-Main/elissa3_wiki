@@ -149,7 +149,7 @@ Replace default .urdf.xacro file for the Astrobee FF, this is done to include ou
 ```
 astrobee/src/elissa3_astrobee/urdf
 ```
-2. Copy the model.urdf.xacro
+2. Copy the **model.urdf.xacro**
 3. Navigate to:
 ```
 astrobee/src/description/description/urdf
