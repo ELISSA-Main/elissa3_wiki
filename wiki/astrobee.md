@@ -136,8 +136,8 @@ astrobee/src/description/description/urdf
 ```
 4. Edit the **sensor_nav_cam.xacro.urdf** file. Change the resolution values to:
 ```
-<width>1280</width>
-<height>960</height>
+`<width>1280</width>`
+`<height>960</height>`
 ```
 By default, the NAV cam resolution is reduced in the simulator for lower computational effort.
 
