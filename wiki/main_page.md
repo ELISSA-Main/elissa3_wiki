@@ -58,7 +58,15 @@ Table of Content:
     - [Development Best Practice](dev_guides#development-best-practice)
 - Documentation for the Astrobee environment
   - [Astrobee Environment](astrobee)
-    - [Run an Astrobee Simulation](astrobee#run-the-astrobee-simulation)
+    - [Installing AFS](astrobee#installing-afs)
+    - [Preparations](astrobee#preparations)
+    - [Clone and build AFS](astrobee#clone-and-build-afs)
+  - [Adding ELISSA Repositories](astrobee#adding-elissa-repositories)
+  - [Setup the Simulation Environment](astrobee#setup-the-simulation-environment)
+    - [Activate the NAV cam](astrobee#activate-the-nav-cam)
+    - [Replace the Astrobee FF model](astrobee#replace-the-astrobee-ff-model)
+    - [Replace the ISS RViz configuration file](astrobee#replace-the-iss-rviz-configuration-file)
+  - [Run an Astrobee Simulation](run-the-astrobee-simulation)
 
 ---
 
