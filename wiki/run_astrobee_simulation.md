@@ -23,3 +23,11 @@ To run the simulator open a terminal session and enter:
 ```shell
 roslaunch elissa3_astrobee sim_elissa.launch
 ```
+
+By default the Final Approach Operations GUI will be launched. 
+This GUI differs from the standard ELISSA version as it has been adapted for the Astrobee 6-DoF environment.
+If your screen resolution is full 1080p or lower, the GUI will be to large to display correctly.
+Adding the appropriate flags to the launch command, will launch a GUI with scrollbars to resolve this issue:
+```shell
+roslaunch elissa3_astrobee sim_elissa.launch fad_ops_gui:=false fad_ops_gui:=true
+```
