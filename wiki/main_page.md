@@ -57,7 +57,7 @@ Table of Content:
     - [ROS Structure](dev_guides#ros-structure)
     - [Development Best Practice](dev_guides#development-best-practice)
 - Documentation for the Astrobee environment
-  - [Astrobee Environment](astrobee)
+  - [Astrobee Environment and Setup](astrobee)
     - [Installing AFS](astrobee#installing-afs)
     - [Preparations](astrobee#preparations)
     - [Clone and build AFS](astrobee#clone-and-build-afs)
