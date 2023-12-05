@@ -66,7 +66,7 @@ Table of Content:
     - [Activate the NAV cam](astrobee#activate-the-nav-cam)
     - [Replace the Astrobee FF model](astrobee#replace-the-astrobee-ff-model)
     - [Replace the ISS RViz configuration file](astrobee#replace-the-iss-rviz-configuration-file)
-  - [Run an Astrobee Simulation](run-the-astrobee-simulation)
+  - [Run an Astrobee Simulation](run_astrobee_simulation)
 
 ---
 
