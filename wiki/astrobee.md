@@ -15,6 +15,7 @@ Table of Content:
   - [Setup the Simulation Environment](#setup-the-simulation-environment)
     - [Activate the NAV cam](#activate-the-nav-cam)
     - [Replace the Astrobee FF model](#replace-the-astrobee-ff-model)
+    - [Replace the ISS RViz configuration file](#replace-the-iss-rviz-configuration-file)
 
 ---
 
@@ -155,3 +156,18 @@ astrobee/src/elissa3_astrobee/urdf
 astrobee/src/description/description/urdf
 ```
 4. Paste and replace the existing **model.urdf.xacro**
+
+### Replace the ISS RViz configuration file
+
+Replace the default iss.rviz file to automatically have RViz configured for RAGGA research.
+
+1. Navigate to:
+```
+astrobee/src/elissa3_astrobee/rviz
+```
+2. Copy the **iss.rviz** file
+3. Navigate to:
+```
+astrobee/src/astrobee/resources/rviz
+```
+4. Paste and replace the existing **iss.rviz** file
