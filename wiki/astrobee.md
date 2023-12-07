@@ -124,7 +124,7 @@ This includes changing some default settings and replacing Astrobee files.
 
 1. Navigate to the simulation config directory:
 ```
-astrobee/src/astrobee/config
+astrobee/src/astrobee/simulation/config
 ```
 2. Edit the **simulation.config** file, by changing the camera sampling rate to a value grater than 0.0, e.g. to:
 ```
@@ -135,7 +135,7 @@ This will allow the simulator to generate images for the NAV cam, in this partic
 ```
 astrobee/src/description/description/urdf
 ```
-4. Edit the **sensor_nav_cam.xacro.urdf** file. Change the resolution values to:
+4. Edit the **sensor_nav_cam.urdf.xacro** file. Change the resolution values to:
 ```
 `<width>1280</width>`
 `<height>960</height>`
