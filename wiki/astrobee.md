@@ -171,3 +171,41 @@ astrobee/src/elissa3_astrobee/rviz
 astrobee/src/astrobee/resources/rviz
 ```
 4. Paste and replace the existing **iss.rviz** file
+
+### Replace the PMC mesh
+
+By default the propulsion modules of the Astrobee will be colored gray.
+In reality, they are black.
+1. Navigate to:
+```
+astrobee/src/elissa3_astrobee/media/astrobee_freeflyer/meshes
+```
+2. Copy the **pmc.dae**
+3. Navigate to 
+```
+astrobee/src/description/media/astrobee_freeflyer/meshes
+```
+4. Paste and replace the existing **pmc.dae** file
+
+### Change the PMC skin of Bumble
+Give Bumble another look, might be helpful later on.
+1. Navigate to:
+```
+astrobee/src/elissa3_astrobee/media/astrobee_freeflyer/meshes
+```
+2. Copy the **pmc_skin_bumble.dae** 
+3. Navigate to:
+```
+astrobee/src/description/media/astrobee_freeflyer/meshes
+```
+4. Paste and replace the existing **pmc_skin_bumble.dae** file
+5. Navigate to:
+```
+astrobee/src/elissa3_astrobee/media/astrobee_freeflyer/media/materials/textures
+```
+6. Copy the **skin_bumble_high_vis.png**
+7. Navigate to: 
+```
+astrobee/src/description/media/astrobee_freeflyer/media/materials/textures
+```
+8. Paste the **skin_bumble_high_vis.png** file
