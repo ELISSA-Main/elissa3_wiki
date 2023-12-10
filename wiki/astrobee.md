@@ -16,6 +16,8 @@ Table of Content:
     - [Activate the NAV cam](#activate-the-nav-cam)
     - [Replace the Astrobee FF model](#replace-the-astrobee-ff-model)
     - [Replace the ISS RViz configuration file](#replace-the-iss-rviz-configuration-file)
+    - [Replace the PMC mesh](#replace-the-pmc-mesh)
+    - [Change the PMC skin of Bumble](#change-the-pmc-skin-of-bumble)
 
 ---
 
