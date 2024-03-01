@@ -25,11 +25,17 @@ Other useful pages:
 - [ ] Turn the LAN switch in the control room on
 - [ ] Start the windows and the linux computer
 - [ ] Activate the blowers in the basement
+- [ ] Open a window in the blower room as well
 
 ## Run the Software
 
 - [ ] Launch the calibrated MotiveTracker software (on the windows computer)
+- [ ] Calibrate MotiveTracker using the existing manual
+- [ ] Open Calibration File, than click "View" and than "Assets"
 - [ ] Activate the blower control
+	- Open Inverter twice, once for each half of the table
+	- Click "Steuerung"
+	- Set "Digitaleingang" to 1 and "Sollwert" to 60Hz
 	- COM5: Left side of the table
 	- COM3: Right side of the table
 
@@ -40,6 +46,7 @@ Other useful pages:
 	- [ ] Installing and connecting the battery (**Attention**: Motors may be active now)
 - Hannibal Class
 	- [ ] Check the battery charge (all > 27V)
+		- Make sure the display is facing you and the red cable is on the right
 	- [ ] Installing and connecting the battery
 	- [ ] Activate the freeflyer (**Attention**: Motors may be active now)
 	- [ ] Activate the flight computer
@@ -55,6 +62,7 @@ Other useful pages:
 
 - [ ] Launch the wanted roslaunch file
 - [ ] Activate the necessary blowers
+	- Click "An/Aus" to activate blower
 
 # Appendix
 
@@ -64,4 +72,7 @@ tbd
 
 ## Activate Hannibal Class Freeflyers
 
-tbd
+- [ ] Make sure the freeflyer is placed in the middle of the glass plate
+- [ ] Activate PCDU
+- [ ] Activate on board computer by holding the innermost red button for one second
+- [ ] If necessary activate robot arm
