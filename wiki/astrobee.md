@@ -329,4 +329,4 @@ rostopic echo /𝚋𝚞𝚖𝚋𝚕𝚎/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒�
 rostopic echo /𝚑𝚘𝚗𝚎𝚢/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢 
 ```
 
-Hopefully, everything is working fine ! I hope whoever you are that you're having a good day ! :)
+Hopefully, everything is working fine !
