@@ -215,12 +215,15 @@ astrobee/src/description/media/astrobee_freeflyer/media/materials/textures
 ## Setup and start Unity Simulation
 ### Download and install Unity
 1. Download Unity Hub and install Unity Editor
+
 1.1. Install Unity Hub 
 You can download it [heŕe](https://unity.com/de/download)
 After the installation you will be prompted to create an account.
+
 1.2. Install the Unity Editor
 You're going to need a specific Unity Editor Version in order to open the project.
 Version **2022.3.22f1**
+
 1.2.1. Open Unity Hub and head to **"Installs"**
 1.2.2. Press **"Install Editor"**
    1.2.3. Under Official releases locate Version **2022.3.22f1** and press the blue install button next to it
