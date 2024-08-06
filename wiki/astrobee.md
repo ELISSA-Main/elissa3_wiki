@@ -295,5 +295,7 @@ Once everything has loaded you are able to start the cross communication by clic
 
 After this it should automatically connect to your own PC 
 If this does'nt work consider going to "Robotics"->"Ros Settings" and ensuring your configuration matches the default configuration
+
+
 ![Default configuration](https://github.com/user-attachments/assets/dd89bc2f-ac3e-4354-8f59-eaedfcb8b10b)
 
