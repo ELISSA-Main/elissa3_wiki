@@ -268,3 +268,32 @@ Run it with the parameters "bumble","honey"."queen" like this:
 ./generate_urdf.sh bumble && ./generate_urdf.sh honey && ./generate_urdf.sh queen
 ```
 
+### Add Unity Ros 
+
+TODO 
+
+### Start ROS & Unity Simulation
+
+First (In the Unity Hub) head to **Projects** and press **Add** the filepath for the unity project should be:
+```
+/astrobee/src/elissa3_astrobee_unity
+```
+
+then click on the now listed project and it should open without an issue !
+
+(If you installed the wrong version it should prompt you to install the missing version)
+
+Now you may proceed to start the simulation 
+
+```
+roslaunch elissa3_astrobee sim_elissa.launch fad_ops_gui:=true tcp_endpoint:=true
+```
+the "tcp_endpoint:=true" parameter is crucial for unity/ros communication ! 
+
+Once everything has loaded you are able to start the cross communication by clicking on the play button
+![Play button](https://github.com/user-attachments/assets/fa26745c-a1e6-4812-9d31-17e2ed332247)
+
+After this it should automatically connect to your own PC 
+If this does'nt work consider going to "Robotics"->"Ros Settings" and ensuring your configuration matches the default configuration
+![Default configuration](https://github.com/user-attachments/assets/dd89bc2f-ac3e-4354-8f59-eaedfcb8b10b)
+
