@@ -214,8 +214,11 @@ astrobee/src/description/media/astrobee_freeflyer/media/materials/textures
 
 ## Setup and start Unity Simulation
 ### IMPORTANT PREPERATION 
-**WARNING** Due to inconsistencies with git pulling large files some unity assests may be corrupted after pulling normally ! 
-For example the ISS asset is supposed to be aprox. 500 MB but if pulling normally it may end up beinfg less than 1MB. 
+**WARNING** 
+
+Due to inconsistencies with git pulling large files some unity assests may be corrupted after pulling normally ! 
+For example the ISS asset is supposed to be aprox. 
+500 MB but if pulling normally it may end up beinfg less than 1MB. 
 We recommending pulling large files via **git-lfs**!
 Install it using this command:
 
