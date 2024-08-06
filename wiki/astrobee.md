@@ -294,6 +294,7 @@ and select **"Add from git url"** and paste in the following url
 https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
 ```
 
+### Start Unity/ROS communication
 Now you may proceed to start the simulation 
 
 ```
