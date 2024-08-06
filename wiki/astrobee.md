@@ -268,10 +268,6 @@ Run it with the parameters "bumble","honey"."queen" like this:
 ./generate_urdf.sh bumble && ./generate_urdf.sh honey && ./generate_urdf.sh queen
 ```
 
-### Add Unity Ros 
-
-TODO 
-
 ### Start ROS & Unity Simulation
 
 First (In the Unity Hub) head to **Projects** and press **Add** the filepath for the unity project should be:
@@ -282,6 +278,21 @@ First (In the Unity Hub) head to **Projects** and press **Add** the filepath for
 then click on the now listed project and it should open without an issue !
 
 (If you installed the wrong version it should prompt you to install the missing version)
+
+## Add Unity Ros 
+
+If you never did this before it may be necessary to install the [ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main)
+
+In your opened Unity Editor locate **"Window"** expand and select **"Packagemanager"**
+
+Locate the +(Add) Button in the upper left corner 
+
+![Location of Add button](https://github.com/user-attachments/assets/9e51d989-7d37-4aba-a09c-86c8cc027d88)
+
+and select **"Add from git url"** and paste in the following url 
+```
+https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
+```
 
 Now you may proceed to start the simulation 
 
