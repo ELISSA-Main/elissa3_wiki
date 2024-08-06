@@ -216,17 +216,18 @@ astrobee/src/description/media/astrobee_freeflyer/media/materials/textures
 ### IMPORTANT PREPERATION 
 **WARNING** 
 
-Due to inconsistencies with git pulling large files some unity assests may be corrupted after pulling normally ! 
-For example the ISS asset is supposed to be aprox. 
-500 MB but if pulling normally it may end up beinfg less than 1MB. 
-We recommending pulling large files via **git-lfs**!
+Due to inconsistencies with git pulling large files, some Unity assets may be corrupted after pulling normally ! 
+
+For example, the ISS asset is supposed to be approximately 500 MB but if pulled normally, it may end up being less than 1 MB. 
+We recommend pulling large files via **git-lfs**!
+
 Install it using this command:
 
 ```
 sudo apt install git-lfs && git lfs install
 ```
 
-Add the submodule 
+Add the submodule:
 
 ```
 git submodule add git@github.com:RFT-RAGGA/elissa3_astrobee_unity.git
@@ -243,8 +244,8 @@ git lfs fetch --all
 
 1.1. Install Unity Hub:
 
-You can download it [heŕe](https://unity.com/de/download)
-After the installation you will be prompted to create an account.
+You can download it [here](https://unity.com/de/download)
+After the installation, you will be prompted to create an account.
 
 1.2. Install the Unity Editor:
 
@@ -255,63 +256,63 @@ Version **2022.3.22f1**
 
 1.2.2. Press **"Install Editor"**
 
-1.2.3. Under Official releases locate Version **2022.3.22f1** and press the blue install button next to it
+1.2.3. Under Official Releases, locate Version **2022.3.22f1** and press the blue install button next to it
 
-### Intergrate existing Astrobee Assets
-Head to the path 
+### Intergrate existing Astrobee assets
+Head to the path:
 ```
 ./𝚜𝚛𝚌/𝚎𝚕𝚒𝚜𝚜𝚊𝟹_𝚊𝚜𝚝𝚛𝚘𝚋𝚎𝚎_𝚞𝚗𝚒𝚝𝚢/𝙰𝚜𝚜𝚎𝚝𝚜
 ```
-In this folder there will be a script called **"generate_urdf.sh"**. 
-Run it with the parameters "bumble","honey"."queen" like this: 
+In this folder, there will be a script called **"generate_urdf.sh"**. 
+Run it with the parameters "bumble","honey" and "queen" like this: 
 ```
 ./generate_urdf.sh bumble && ./generate_urdf.sh honey && ./generate_urdf.sh queen
 ```
 
 ### Start ROS & Unity Simulation
 
-First (In the Unity Hub) head to **Projects** and press **Add** the filepath for the unity project should be:
+First (In the Unity Hub) head to **Projects** and press **Add** the filepath for the Unity project should be:
 ```
 /astrobee/src/elissa3_astrobee_unity
 ```
 
-then click on the now listed project and it should open without an issue !
+then click on the now listed Project and it should open without issue !
 
-(If you installed the wrong version it should prompt you to install the missing version)
+(If you installed the wrong version, it should prompt you to install the missing version)
 
-## Add Unity Ros 
+## Add Unity ROS 
 
-If you never did this before it may be necessary to install the [ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main)
+If you never did this before, it may be necessary to install the [ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main)
 
-In your opened Unity Editor locate **"Window"** expand and select **"Packagemanager"**
+In your opened Unity Editor, locate **"Window"** expand, and select **"Packagemanager"**
 
-Locate the +(Add) Button in the upper left corner 
+Locate the +(Add) Button in the upper left corner:
 
 ![Location of Add button](https://github.com/user-attachments/assets/9e51d989-7d37-4aba-a09c-86c8cc027d88)
 
-and select **"Add from git url"** and paste in the following url 
+and select **"Add from git url"** and paste in the following url: 
 ```
 https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
 ```
 
 ### Start Unity/ROS communication
-Now you may proceed to start the simulation 
+Now you may proceed to start the simulation:
 
 ```
 roslaunch elissa3_astrobee sim_elissa.launch fad_ops_gui:=true tcp_endpoint:=true
 ```
-the "tcp_endpoint:=true" parameter is crucial for unity/ros communication ! 
+The "tcp_endpoint:=true" parameter is crucial for unity/ros communication ! 
 
 Once everything has loaded you are able to start the cross communication by clicking on the play button
 ![Play button](https://github.com/user-attachments/assets/fa26745c-a1e6-4812-9d31-17e2ed332247)
 
-After this it should automatically connect to your own PC 
-If this does'nt work consider going to "Robotics"->"Ros Settings" and ensuring your configuration matches the default configuration
+After this, it should automatically connect (127.0.0.1:10000)
+If this doesn't work, consider going to "Robotics"->"Ros Settings" and ensuring your configuration matches the default configuration.
 
 
 ![Default configuration](https://github.com/user-attachments/assets/dd89bc2f-ac3e-4354-8f59-eaedfcb8b10b)
 
-If you wanna do some debugging you should be able to listen in to the published and rendered images by ROS on the topics
+If you want to do some debugging, you should be able to listen to the published and rendered images by ROS on the topics:
 ```
 /𝚋𝚞𝚖𝚋𝚕𝚎/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢
 ```
@@ -328,4 +329,4 @@ rostopic echo /𝚋𝚞𝚖𝚋𝚕𝚎/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒�
 rostopic echo /𝚑𝚘𝚗𝚎𝚢/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢 
 ```
 
-Hopefully everything is working fine ! I hope whoever you are that you're having a good day ! :)
+Hopefully, everything is working fine ! I hope whoever you are that you're having a good day ! :)
