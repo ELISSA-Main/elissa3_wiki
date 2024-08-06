@@ -311,3 +311,21 @@ If this does'nt work consider going to "Robotics"->"Ros Settings" and ensuring y
 
 ![Default configuration](https://github.com/user-attachments/assets/dd89bc2f-ac3e-4354-8f59-eaedfcb8b10b)
 
+If you wanna do some debugging you should be able to listen in to the published and rendered images by ROS on the topics
+```
+/𝚋𝚞𝚖𝚋𝚕𝚎/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢
+```
+```
+/𝚑𝚘𝚗𝚎𝚢/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢
+```
+Respectfully. You can check this for yourself by using the rostopic command as follows:
+
+```
+rostopic echo /𝚋𝚞𝚖𝚋𝚕𝚎/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢 
+```
+
+```
+rostopic echo /𝚑𝚘𝚗𝚎𝚢/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢 
+```
+
+Hopefully everything is working fine ! I hope whoever you are that you're having a good day ! :)
