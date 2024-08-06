@@ -213,6 +213,28 @@ astrobee/src/description/media/astrobee_freeflyer/media/materials/textures
 8. Paste the **skin_bumble_high_vis.png** file
 
 ## Setup and start Unity Simulation
+### IMPORTANT PREPERATION 
+**WARNING** Due to inconsistencies with git pulling large files some unity assests may be corrupted after pulling normally ! 
+For example the ISS asset is supposed to be aprox. 500 MB but if pulling normally it may end up beinfg less than 1MB. 
+We recommending pulling large files via **git-lfs**!
+Install it using this command:
+
+```
+sudo apt install git-lfs && git lfs install
+```
+
+Add the submodule 
+
+```
+git submodule add git@github.com:RFT-RAGGA/elissa3_astrobee_unity.git
+```
+
+Use lfs to fetch all files fully !
+
+```
+git lfs fetch --all
+```
+
 ### Download and install Unity
 1. Download Unity Hub and install Unity Editor
 
@@ -231,3 +253,15 @@ Version **2022.3.22f1**
 1.2.2. Press **"Install Editor"**
 
 1.2.3. Under Official releases locate Version **2022.3.22f1** and press the blue install button next to it
+
+### Intergrate existing Astrobee Assets
+Head to the path 
+```
+./𝚜𝚛𝚌/𝚎𝚕𝚒𝚜𝚜𝚊𝟹_𝚊𝚜𝚝𝚛𝚘𝚋𝚎𝚎_𝚞𝚗𝚒𝚝𝚢/𝙰𝚜𝚜𝚎𝚝𝚜
+```
+In this folder there will be a script called **"generate_urdf.sh"**. 
+Run it with the parameters "bumble","honey"."queen" like this: 
+```
+./generate_urdf.sh bumble && ./generate_urdf.sh honey && ./generate_urdf.sh queen
+```
+
