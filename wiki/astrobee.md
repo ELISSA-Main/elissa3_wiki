@@ -18,7 +18,7 @@ Table of Content:
     - [Replace the ISS RViz configuration file](#replace-the-iss-rviz-configuration-file)
     - [Replace the PMC mesh](#replace-the-pmc-mesh)
     - [Change the PMC skin of Bumble](#change-the-pmc-skin-of-bumble)
-
+  - [Setup and start Unity Simulation](#setup-and-start-unity-simulation)
 ---
 
 ## Installing AFS
@@ -211,3 +211,122 @@ astrobee/src/elissa3_astrobee/media/astrobee_freeflyer/media/materials/textures
 astrobee/src/description/media/astrobee_freeflyer/media/materials/textures
 ```
 8. Paste the **skin_bumble_high_vis.png** file
+
+## Setup and start Unity Simulation
+### IMPORTANT PREPERATION 
+**WARNING** 
+
+Due to inconsistencies with git pulling large files, some Unity assets may be corrupted after pulling normally ! 
+
+For example, the ISS asset is supposed to be approximately 500 MB but if pulled normally, it may end up being less than 1 MB. 
+We recommend pulling large files via **git-lfs**!
+
+Install it using this command:
+
+```
+sudo apt install git-lfs && git lfs install
+```
+
+Add the submodule:
+
+```
+git submodule add git@github.com:RFT-RAGGA/elissa3_astrobee_unity.git
+```
+
+Use lfs to fetch all files fully !
+
+```
+git lfs fetch --all
+```
+
+### Download and install Unity
+1. Download Unity Hub and install Unity Editor
+
+1.1. Install Unity Hub:
+
+You can download it [here](https://unity.com/de/download)
+After the installation, you will be prompted to create an account.
+
+1.2. Install the Unity Editor:
+
+You're going to need a specific Unity Editor Version in order to open the project.
+Version **2022.3.22f1**
+
+1.2.1. Open Unity Hub and head to **"Installs"**
+
+1.2.2. Press **"Install Editor"**
+
+1.2.3. Under Official Releases, locate Version **2022.3.22f1** and press the blue install button next to it
+
+### Intergrate existing Astrobee assets
+Head to the path:
+```
+./𝚜𝚛𝚌/𝚎𝚕𝚒𝚜𝚜𝚊𝟹_𝚊𝚜𝚝𝚛𝚘𝚋𝚎𝚎_𝚞𝚗𝚒𝚝𝚢/𝙰𝚜𝚜𝚎𝚝𝚜
+```
+In this folder, there will be a script called **"generate_urdf.sh"**. 
+Run it with the parameters "bumble","honey" and "queen" like this: 
+```
+./generate_urdf.sh bumble && ./generate_urdf.sh honey && ./generate_urdf.sh queen
+```
+
+### Start ROS & Unity Simulation
+
+First (In the Unity Hub) head to **Projects** and press **Add** the filepath for the Unity project should be:
+```
+/astrobee/src/elissa3_astrobee_unity
+```
+
+then click on the now listed Project and it should open without issue !
+
+(If you installed the wrong version, it should prompt you to install the missing version)
+
+## Add Unity ROS 
+
+If you never did this before, it may be necessary to install the [ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main)
+
+In your opened Unity Editor, locate **"Window"** expand, and select **"Packagemanager"**
+
+Locate the +(Add) Button in the upper left corner:
+
+![Location of Add button](https://github.com/user-attachments/assets/9e51d989-7d37-4aba-a09c-86c8cc027d88)
+
+and select **"Add from git url"** and paste in the following url: 
+```
+https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
+```
+
+### Start Unity/ROS communication
+Now you may proceed to start the simulation:
+
+```
+roslaunch elissa3_astrobee sim_elissa.launch fad_ops_gui:=true tcp_endpoint:=true
+```
+The "tcp_endpoint:=true" parameter is crucial for unity/ros communication ! 
+
+Once everything has loaded you are able to start the cross communication by clicking on the play button
+![Play button](https://github.com/user-attachments/assets/fa26745c-a1e6-4812-9d31-17e2ed332247)
+
+After this, it should automatically connect (127.0.0.1:10000)
+If this doesn't work, consider going to "Robotics"->"Ros Settings" and ensuring your configuration matches the default configuration.
+
+
+![Default configuration](https://github.com/user-attachments/assets/dd89bc2f-ac3e-4354-8f59-eaedfcb8b10b)
+
+If you want to do some debugging, you should be able to listen to the published and rendered images by ROS on the topics:
+```
+/𝚋𝚞𝚖𝚋𝚕𝚎/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢
+```
+```
+/𝚑𝚘𝚗𝚎𝚢/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢
+```
+Respectfully. You can check this for yourself by using the rostopic command as follows:
+
+```
+rostopic echo /𝚋𝚞𝚖𝚋𝚕𝚎/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢 
+```
+
+```
+rostopic echo /𝚑𝚘𝚗𝚎𝚢/𝚗𝚊𝚟𝚌𝚊𝚖_𝚞𝚗𝚒𝚝𝚢 
+```
+
+Hopefully, everything is working fine !
