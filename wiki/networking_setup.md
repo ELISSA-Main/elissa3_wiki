@@ -2,8 +2,13 @@
 
 This page walks you through the networking setup. 
 ---
-TODO 
-
+## Table of Contents
+- [Preparation](#preparation)
+- [Setup Wi-Fi Hotspot](#setup-wi-fi-hotspot)
+- [Prepare Portable Router](#prepare-portable-router)
+- [Setup of Network Extension](#setup-of-network-extension)
+- [Connecting to Inner Network Devices](#connecting-to-inner-network-devices)
+  
 ---
 
 ## Preparation
