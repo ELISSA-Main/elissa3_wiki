@@ -3,6 +3,7 @@
 This page walks you through the networking setup. 
 
 ---
+
 ## Table of Contents
 - [Preparation](#preparation)
 - [Setup Wi-Fi Hotspot](#setup-wi-fi-hotspot)
