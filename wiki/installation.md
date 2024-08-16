@@ -138,7 +138,7 @@ The minimum required repositories to run simulations are:
 
 ## Network Configuration
 
-tbd
+You can find a comprehensive networking guide here: [Free-Flyer on-board network setup](networking_setup.md)
 
 ## Setting up VS Code
 
