@@ -35,7 +35,7 @@ Here's the guide for Debian/Ubuntu operating systems:
 6. You should now be able to see your HOTSPOT on another device
 7. Head to ```/etc/NetworkManager/system-connections```
 8. Locate the file ```Hotspot.nmconnection```
-9. Proceed to edit the file using ```sudo nano Hotspot.nmconnection``` or vim that's up to you
+9. Proceed to edit the file using ```sudo nano Hotspot.nmconnection```
 10. Edit the Ipv4 section to match below
 11. Restart the Network Daemon using ```sudo service network-manager restart```
 ```shell
