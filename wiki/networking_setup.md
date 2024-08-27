@@ -33,7 +33,7 @@ Here's the guide for Debian/Ubuntu operating systems:
 4. Select "Turn on Wi-Fi Hotspot"
 5. Choose a Password and SSID (Make sure to note this down for later). For Security Type, choose "WPA"
 6. You should now be able to see your HOTSPOT on another device
-7. Head to "/etc/NetworkManager/system-connections"
+7. Head to ```/etc/NetworkManager/system-connections```
 8. Locate the file "Hotspot.nmconnection"
 9. Proceed to edit the file using "sudo nano Hotspot.nmconnection" or vim that's up to you
 10. Edit the Ipv4 section to match below
