@@ -30,9 +30,20 @@ Here's the guide for Debian/Ubuntu operating systems:
 1. Open the app settings
 2. Locate the section Wi-Fi
 3. Locate the 3 vertical dots on the top of the setting bar.
-4. Select "Turn on Wi-Fi Hotspot"
+4. Select ```Turn on Wi-Fi Hotspot```
 5. Choose a Password and SSID (Make sure to note this down for later). For Security Type, choose "WPA"
 6. You should now be able to see your HOTSPOT on another device
+7. Head to ```/etc/NetworkManager/system-connections```
+8. Locate the file ```Hotspot.nmconnection```
+9. Proceed to edit the file using ```sudo nano Hotspot.nmconnection``` (Editing this file REQUIRES sudo privilages)
+10. Edit the Ipv4 section to match below
+11. Restart the Network Daemon using ```sudo service network-manager restart```
+```shell
+[ipv4]
+address1=192.168.0.1/24,192.168.0.1
+dns-search=
+method=shared
+```
 
 ## Prepare Portable Router
 
@@ -48,7 +59,7 @@ This section will require another Wi-Fi capable device.
 8. You are now inside the control center. Locate the option "Quick Setup" default settings should be working well for you.
 9. You will be prompted to connect to a network: Choose your HOTSPOT and enter the corresponding password 
 10. Ensure that the operating mode is set to "client" (This may be done in quick setup or later via the option "operating mode" in the control panel)
-
+11. In the "Network->Lan" section set the IP Address to static and the routers IP to "192.168.0.2"
 
 ## Setup of network extension
 
