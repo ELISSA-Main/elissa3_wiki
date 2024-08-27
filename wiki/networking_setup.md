@@ -30,14 +30,14 @@ Here's the guide for Debian/Ubuntu operating systems:
 1. Open the app settings
 2. Locate the section Wi-Fi
 3. Locate the 3 vertical dots on the top of the setting bar.
-4. Select "Turn on Wi-Fi Hotspot"
+4. Select ```Turn on Wi-Fi Hotspot```
 5. Choose a Password and SSID (Make sure to note this down for later). For Security Type, choose "WPA"
 6. You should now be able to see your HOTSPOT on another device
 7. Head to ```/etc/NetworkManager/system-connections```
-8. Locate the file "Hotspot.nmconnection"
-9. Proceed to edit the file using "sudo nano Hotspot.nmconnection" or vim that's up to you
+8. Locate the file ```Hotspot.nmconnection```
+9. Proceed to edit the file using ```sudo nano Hotspot.nmconnection``` or vim that's up to you
 10. Edit the Ipv4 section to match below
-11. Restart the Network Daemon using "sudo service network-manager restart"
+11. Restart the Network Daemon using ```sudo service network-manager restart```
 ```shell
 [ipv4]
 address1=192.168.0.1/24,192.168.0.1
