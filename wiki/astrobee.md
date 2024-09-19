@@ -213,6 +213,7 @@ astrobee/src/description/media/astrobee_freeflyer/media/materials/textures
 8. Paste the **skin_bumble_high_vis.png** file
 
 ## Setup and start Unity Simulation
+
 ### IMPORTANT PREPERATION 
 **WARNING** 
 
