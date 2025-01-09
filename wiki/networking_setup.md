@@ -49,7 +49,7 @@ method=shared
 
 This section will require another Wi-Fi capable device. 
 
-1. Locate the "Mode Switch" on the side of the device and select the lowest option.
+1. Locate the "Mode Switch" on the side of the device and set it to AP/ RNG Ext/ Client.
 2. Locate the back of your router and if you can, note down or take a photo of the Information on the back.
 3. Plug the router into an appropriate PSU 
 4. There will be one or multiple SSID(s) as well as a password and a "default access"
