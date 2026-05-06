@@ -6,7 +6,8 @@
   {% include git-wiki/sections/head/meta.html %}
   {% include git-wiki/sections/head/scripts.html %}
   {% include git-wiki/sections/head/styles.html %}
-
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   {% if site.inc_after_head %}
   {% include {{ site.inc_after_head }} %}
   {% endif %}
