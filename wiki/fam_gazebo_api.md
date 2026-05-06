@@ -55,3 +55,4 @@ ignition::math::Vector3d pos0(-0.08, -0.08, 0.0);
 
 // 4. Apply the calculated force at the specified position
 this->model->GetLink("base_link")->AddForceAtRelativePosition(this->thrust_values[0] * force0, pos0);
+```
