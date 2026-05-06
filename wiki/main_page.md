@@ -51,6 +51,7 @@ Table of Content:
     - [Recalibrating Optitrack](optitrack#recalibrating-optitrack)
   - [Other Tutorials](tutorials)
     - [Setting up the extruder controller](printing_controller)
+    - [Integrating FAM in Gazebo Simulations](fam_gazebo_api)
 - Guides for the development of ELISSA software
   - [Developer Guides](dev_guides)
     - [Software and Package Structure](dev_guides#software-and-package-structure)
