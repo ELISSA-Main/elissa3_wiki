@@ -10,7 +10,7 @@ During the robot arm's operation, reaction forces from the robot arm movements c
 
 We use gazebo to simulate the lab environment (ELISSA), in which we can virtually interact with the robots and observe the data such as the position of the freeflyer, joint angles of the robot arm, etc. 
 The following figure shows the overall workflow of the simulation environment. 
-<img width="5204" height="1648" alt="image" src="https://github.com/user-attachments/assets/a3919cb1-a2db-4964-af0e-e69698e90f21" />
+<img width="1301" height="412" alt="image" src="https://github.com/user-attachments/assets/a3919cb1-a2db-4964-af0e-e69698e90f21" />
 In the simulation environment, we can give commands to the robot arm via `moveit` module, which takes desired end-effector position alongside current arm joint angles and output the command of the corresponding trajectory. After that, hardware interface module `meca_hw_interface` takes the trajectory and publish commands of joint angles in string format as:
 ```'MoveJoints(angle1, angle2, angle3, angle4, angle5, angle6)'``` where all angles are defined in degree. This string is also to be used with the meca500. Then, the real robot arm PID controller takes these inputs and control joints to the calculated positions, whereas in the simulated robot arm PID controller, we need to firstly implement the string parser `meca500_movejoints_parser.py` such that the `libgazebo_ros_control` can read the joint angles.  
 
