@@ -15,3 +15,13 @@ In the simulation environment, we can give commands to the robot arm via `moveit
 ```'MoveJoints(angle1, angle2, angle3, angle4, angle5, angle6)'``` where all angles are defined in degree. This string is also to be used with the meca500. Then, the real robot arm PID controller takes these inputs and control joints to the calculated positions, whereas in the simulated robot arm PID controller, we need to firstly implement the string parser `meca500_movejoints_parser.py` such that the `libgazebo_ros_control` can read the joint angles.  
 
 Note that, the real PID values of the robot arm is unknown and must be **identified** to accurately tune the controller of the freeflyer in the simulation environment(For now, this is PID).
+
+## Launching the simulation
+Run the following command in the terminal.
+```shell
+roslaunch elissa3_nncs hannibal_meca_plan.launch sim_mode:=true
+```
+## Launching the module with the real robot arm
+```shell
+roslaunch elissa3_nncs hannibal_meca_plan.launch lab_mode:=true
+```
