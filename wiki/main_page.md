@@ -52,6 +52,7 @@ Table of Content:
   - [Other Tutorials](tutorials)
     - [Setting up the extruder controller](printing_controller)
     - [Integrating FAM in Gazebo Simulations](fam_gazebo_api.md)
+    - [Control system and simulation of hannibal meca](hannibal_meca_nncs.md)
 - Guides for the development of ELISSA software
   - [Developer Guides](dev_guides)
     - [Software and Package Structure](dev_guides#software-and-package-structure)
