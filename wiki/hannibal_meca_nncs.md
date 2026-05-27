@@ -20,9 +20,10 @@ The following figure shows the high-level workflow of the lab environment.
 <img width="1380" height="485" alt="image" src="https://github.com/user-attachments/assets/13eb300f-5cbd-4106-959e-eb3d5446f643" />
 
 Remarks:
-1. The real PID values of the robot arm is unknown and must be **identified** to accurately tune the controller of the freeflyer in the simulation environment (For now, this is PID).
+1. The real PID values of the robot arm is unknown and must be **identified** (gray box) to accurately tune the controller of the freeflyer in the simulation environment (For now, this is PID).
 2. The individual link's inertias of the meca 500 is estimated and may not be accurated (elissa3_ws/src/elissa3_ram/elissa3_ram_legacy/urdf/meca_500_r3_with_inertia.urdf.xacro).
-3. Using full detailed model of the freeflyer cause substantially drop in FPS. Set flag `ff_simple` to `true` to use the simplified model of the freeflyer in the robot simulation. 
+3. Using full detailed model of the freeflyer cause substantially drop in FPS. Set flag `ff_simple` to `true` to use the simplified model of the freeflyer in the robot simulation.
+4. Red boxes represent the part which we need to take care of in the next step such as implementing and tuning the controller and its parameters.
 ## Launching the simulation
 Run the following command in the terminal.
 ```shell
